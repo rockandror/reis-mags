@@ -48,3 +48,14 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'capybara-screenshot'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
+  gem 'fuubar'
+  gem 'poltergeist'
+end
+
+

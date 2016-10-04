@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  pool: 5
+  username:
+  password:
+
+development: &development
+  <<: *default
+  database: boatjump_development
+
+test:
+  <<: *default
+  database: boatjump_test
+
+production:
+  <<: *development

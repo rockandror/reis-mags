@@ -55,6 +55,8 @@ gem 'rails_admin_toggleable'
 gem "rails_admin_map_field", git: "https://github.com/dkobia/rails_admin_map_field.git"
 gem 'rails_admin', git: 'https://github.com/sferik/rails_admin.git'
 
+gem 'cookies_eu'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -76,6 +78,7 @@ group :test do
   gem 'database_cleaner'
   gem 'fuubar'
   gem 'poltergeist'
+  gem 'show_me_the_cookies'
 end
 
 

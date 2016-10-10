@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/brainspec/enumerize.git
+  revision: f081e4aefd4ece5aecdeebc97ee51f778ecc237f
+  specs:
+    enumerize (2.0.0)
+      activesupport (>= 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -232,6 +239,7 @@ DEPENDENCIES
   database_cleaner
   devise
   devise-i18n (~> 1.1.0)
+  enumerize!
   factory_girl_rails
   fuubar
   jbuilder (~> 2.0)

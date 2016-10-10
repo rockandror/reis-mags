@@ -12,7 +12,6 @@
  *
  *= require_tree .
  *= require_self
- *= require home
  *= require nprogress
  *= require nprogress-bootstrap
  */

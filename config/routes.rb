@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
-  
-  get '/pages/cookies_policy' => 'pages#cookies_policy', :as => :cookies_policy_page
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
-  root "pages#show", page: "home"
+  scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
+    get '/pages/cookies_policy' => 'pages#cookies_policy', :as => :cookies_policy_page
+
+    root "pages#show", page: "home"
+  end
 end

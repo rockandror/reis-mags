@@ -108,6 +108,7 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    nprogress-rails (0.1.6.7)
     pg (0.19.0)
     pkg-config (1.1.7)
     poltergeist (1.10.0)
@@ -223,6 +224,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   letter_opener_web (~> 1.2.0)
+  nprogress-rails
   pg
   poltergeist
   premailer-rails

@@ -15,5 +15,6 @@
 //= require nprogress
 //= require nprogress-turbolinks
 //= require nprogress-ajax
+//= require cookies_eu
 //= require turbolinks
 //= require_tree .

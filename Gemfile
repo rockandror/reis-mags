@@ -39,6 +39,11 @@ gem 'pg'
 #Application specific gems
 gem 'premailer-rails'
 gem 'enumerize', git: "https://github.com/brainspec/enumerize.git"
+gem 'premailer-rails'
+# Model translations
+gem 'globalize', '~> 5.0.0'
+gem 'globalize-accessors'
+gem 'globalize-validations'
 
 gem 'devise'
 gem 'devise-i18n', '~> 1.1.0'

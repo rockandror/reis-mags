@@ -2,47 +2,11 @@
   
   <div class="container content"> 
     <div class="row">
-    
-    </div>
-     
-    <div class="destination row">
-      <h3><%= t("home.destination_html") %></h3>
-      <span><%= t("home.inpsired") %></span>
-      <div class="container-fluid">
-        <% ibiza = Place.locate("Ibiza", :es).first %>
-        <% if ibiza.present? %>      
-          <div class="col-xs-12 col-sm-4 col-md-4 item">
-            <%= link_to boats_path(search: ibiza.fullname, place_id: ibiza.id) do %>
-              <h3><%= ibiza.name %></h3>
-              <%= image_tag("home/ibiza.jpg", class:"img-responsive", id: "left-destination") %>
-            <% end %>
-          </div>
-        <% end %>
-
-        <% mallorca = Place.locate("Mallorca", :es).first %>
-        <% if mallorca.present? %>      
-          <div class="col-xs-12 col-sm-4 col-md-4 item">
-            <%= link_to boats_path(search: mallorca.fullname, place_id: mallorca.id) do %>
-              <h3><%= mallorca.name %></h3>
-              <%= image_tag("home/mallorca.jpg", class:"img-responsive", id: "center-destination")%>
-            <% end %>
-          </div>
-        <% end %>        
-
-        <% menorca = Place.locate("Menorca", :es).first %>
-        <% if menorca.present? %>      
-          <div class="col-xs-12 col-sm-4 col-md-4 item">
-            <%= link_to boats_path(search: menorca.fullname, place_id: menorca.id) do %>
-              <h3><%= menorca.name %></h3>
-              <%= image_tag("home/menorca.jpg", class:"img-responsive", id: "right-destination")%>
-            <% end %>
-          </div>
-        <% end %>  
-      </div>
 
     </div>
+
     <div class="container-form-contact col-md-12">
-      <%= render "contacts/form", klass: "contact-request-page hideLeftRight-xs", from: "pages#home" %>
+    
     </div>
   </div>
 </div>

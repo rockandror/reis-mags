@@ -47,6 +47,13 @@ gem 'globalize-validations'
 
 gem 'devise'
 gem 'devise-i18n', '~> 1.1.0'
+gem 'rails_admin_rollincode', git: "https://github.com/BoatjumpSL/rails_admin_theme.git"
+gem 'rails_admin-i18n'
+gem 'rails_admin_globalize_field'
+gem 'rails_admin_nestable', '~> 0.3.2'
+gem 'rails_admin_toggleable'
+gem "rails_admin_map_field", git: "https://github.com/dkobia/rails_admin_map_field.git"
+gem 'rails_admin', git: 'https://github.com/sferik/rails_admin.git'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

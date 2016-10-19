@@ -206,6 +206,8 @@ GEM
     premailer-rails (1.9.4)
       actionmailer (>= 3, < 6)
       premailer (~> 1.7, >= 1.7.9)
+    quiet_assets (1.1.0)
+      railties (>= 3.1, < 5.0)
     rack (1.6.4)
     rack-pjax (1.0.0)
       nokogiri (~> 1.5)
@@ -347,6 +349,7 @@ DEPENDENCIES
   pg
   poltergeist
   premailer-rails
+  quiet_assets
   rails (= 4.2.6)
   rails_admin!
   rails_admin-i18n

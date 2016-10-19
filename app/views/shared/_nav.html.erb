@@ -1,0 +1,46 @@
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project name</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <%= link_to "#", class: "dropdown-toggle", data: { toggle: "dropdown" } do %>
+            <%= image_tag(flag(locale)) %>
+            <span class="caret"></span>
+          <% end %>
+          <ul id="language_switcher" class="dropdown-menu">
+            <% I18n.available_locales.each do |locale| %>
+              <% if I18n.locale != locale %>
+                <%= content_tag :li do %>
+                  <% I18n.with_locale(locale) do %>
+                    <% url_params = { locale: locale} %>
+                    <%= link_to params.merge(url_params), data: { turbolinks: false }  do %>
+                     <%= image_tag(flag(locale)) %>
+                    <% end %>
+                  <% end %>
+                <% end %>
+              <% end %>
+            <% end %>           
+          </ul> 
+          <div class="line-separate hidden-xs"></div>
+        </li>    
+
+        <li class="phone hidden-sm hidden-md hidden-lg"><%= link_to t("company_mobile"), "tel: #{t("company_mobile")}" %></li>
+        <li class="phone hidden-xs"><p><%= t "company_mobile" %></p></li>        
+      </ul>      
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>

@@ -12,9 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-sprockets
 //= require nprogress
 //= require nprogress-turbolinks
 //= require nprogress-ajax
 //= require cookies_eu
 //= require turbolinks
-//= require_tree .
+// ** Analytics code must be placed after turbolinks scripts
+//= require analytics

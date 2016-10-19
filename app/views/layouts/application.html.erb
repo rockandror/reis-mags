@@ -7,9 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <%= render '/shared/nav' %>
+  <%= render '/shared/notice' %>
   <%= yield %>
-  
+  <%= render '/shared/footer' %>
   <%= render 'cookies_eu/consent_banner', link: cookies_policy_page_path, target: :blank %>
 
 </body>

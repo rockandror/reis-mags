@@ -29,4 +29,7 @@ Please feel free to use a different markup language if you do not plan to run
 
 Configuracion extra:
 
-Añadir en el archivo "analytics.js" el nombre del proyecto para desactivarlo en Staging
+Añadir en el archivo "analytics.js":
+  * dominio staging
+  * analyticsId
+Añadir en el archvio "devise.rb" el email a utilizar en la variable "config.mailer_sender"

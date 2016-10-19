@@ -48,7 +48,7 @@ this.GoogleAnalytics = (function() {
   };
 
   GoogleAnalytics.analyticsId = function() {
-    return 'UA-84607147-1';
+    return 'UA-xxxxxxxx-y';
   };
 
   return GoogleAnalytics;

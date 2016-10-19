@@ -19,3 +19,4 @@
 //= require cookies_eu
 //= require turbolinks
 // ** Analytics code must be placed after turbolinks scripts
+//= require analytics

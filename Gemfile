@@ -50,7 +50,7 @@ gem 'globalize-validations'
 
 gem 'devise'
 gem 'devise-i18n', '~> 1.1.0'
-gem 'rails_admin_rollincode', git: "https://github.com/BoatjumpSL/rails_admin_theme.git"
+#gem 'rails_admin_rollincode', git: "https://github.com/BoatjumpSL/rails_admin_theme.git"
 gem 'rails_admin-i18n'
 gem 'rails_admin_globalize_field'
 gem 'rails_admin_nestable', '~> 0.3.2'

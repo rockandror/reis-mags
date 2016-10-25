@@ -1,11 +1,4 @@
 GIT
-  remote: https://github.com/BoatjumpSL/rails_admin_theme.git
-  revision: 26419dcc59ae331c19d1326dc47afbc659fef5b8
-  specs:
-    rails_admin_rollincode (1.1)
-      rails (>= 4.0, < 6)
-
-GIT
   remote: https://github.com/brainspec/enumerize.git
   revision: f081e4aefd4ece5aecdeebc97ee51f778ecc237f
   specs:
@@ -353,7 +346,6 @@ DEPENDENCIES
   rails_admin_globalize_field
   rails_admin_map_field!
   rails_admin_nestable (~> 0.3.2)
-  rails_admin_rollincode!
   rails_admin_toggleable
   rspec-rails
   sass-rails (~> 5.0)

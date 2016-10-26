@@ -7,15 +7,15 @@ feature "Admin passwords", :type => :feature do
   scenario 'Admin users can forget his passwords' do
     visit new_user_session_path
 
-    expect(page).to have_link "Forgot your password?"
+    expect(page).to have_link "¿Ha olvidado su contraseña?"
   end
 
   scenario 'Admin users can request passwords reset' do
     ActionMailer::Base.deliveries = []
     visit new_user_password_path
-    
+
     fill_in "user_email", with: user.email
-    click_on "Send me reset password instructions"
+    click_on "Envíeme las instrucciones para resetear mi contraseña"
 
     expect(page).to have_content "Recibirás un correo con instrucciones sobre cómo resetear tu contraseña en unos pocos minutos."
     expect(ActionMailer::Base.deliveries.count).to eq(1)
@@ -24,9 +24,9 @@ feature "Admin passwords", :type => :feature do
   scenario 'Admin users can receive an email with reset instructions' do
     ActionMailer::Base.deliveries = []
     visit new_user_password_path
-    
+
     fill_in "user_email", with: user.email
-    click_on "Send me reset password instructions"
+    click_on "Envíeme las instrucciones para resetear mi contraseña"
 
     expect(ActionMailer::Base.deliveries.count).to eq(1)
   end     
@@ -35,7 +35,7 @@ feature "Admin passwords", :type => :feature do
     visit new_user_password_path
     
     fill_in "user_email", with: user.email
-    click_on "Send me reset password instructions"
+    click_on "Envíeme las instrucciones para resetear mi contraseña"
 
     expect(page).to have_content "Recibirás un correo con instrucciones sobre cómo resetear tu contraseña en unos pocos minutos."
   end  

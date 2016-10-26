@@ -10,6 +10,15 @@ feature "Admin passwords", :type => :feature do
     expect(page).to have_link "¿Ha olvidado su contraseña?"
   end
 
+  scenario "should show error when email not found" do
+    visit new_user_password_path
+
+    fill_in "user_email", with: "unexistent@email.com"
+    click_on "Envíeme las instrucciones para resetear mi contraseña"
+
+    expect(page).to have_content "no se ha encontrado"
+  end
+
   scenario 'Admin users can request passwords reset' do
     ActionMailer::Base.deliveries = []
     visit new_user_password_path
@@ -29,16 +38,16 @@ feature "Admin passwords", :type => :feature do
     click_on "Envíeme las instrucciones para resetear mi contraseña"
 
     expect(ActionMailer::Base.deliveries.count).to eq(1)
-  end     
+  end
 
   scenario 'Admin users can edit his passwords throught email link' do
     visit new_user_password_path
-    
+
     fill_in "user_email", with: user.email
     click_on "Envíeme las instrucciones para resetear mi contraseña"
 
-    expect(page).to have_content "Recibirás un correo con instrucciones sobre cómo resetear tu contraseña en unos pocos minutos."
-  end  
+
+  end
 
 
 end

@@ -8,11 +8,11 @@ default: &default
 
 development: &development
   <<: *default
-  database: boatjump_development
+  database: xxxxxx_development
 
 test:
   <<: *default
-  database: boatjump_test
+  database: xxxxxx_test
 
 production:
   <<: *development

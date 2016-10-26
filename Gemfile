@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.3.0'
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 
 # Use SCSS for stylesheets
@@ -31,7 +33,7 @@ gem 'globalize-validations'
 
 gem 'devise'
 gem 'devise-i18n', '~> 1.1.0'
-gem 'rails_admin_rollincode', git: "https://github.com/BoatjumpSL/rails_admin_theme.git"
+#gem 'rails_admin_rollincode', git: "https://github.com/BoatjumpSL/rails_admin_theme.git"
 gem 'rails_admin-i18n'
 gem 'rails_admin_globalize_field'
 gem 'rails_admin_nestable', '~> 0.3.2'

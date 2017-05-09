@@ -60,7 +60,7 @@
   @include block-landscape();
 }
 
-@mixin cookies-eu-customstyle($position){
+@mixin cookies-eu-custom-style($position){
   .cookies-eu{
     position: $position;
     left:0;
@@ -81,6 +81,31 @@
       a{
         margin-left: 1em;
         color:white;
+      }
+    }
+  }
+}
+
+@mixin datapicker-custom-style($width,$border, $textColor){
+  .datepicker-dropdown{
+    @if $border == true {
+      border:1px solid $brand-primary;
+    }
+    .table-condensed{
+      width: $width;
+      text-align: center;
+      .prev,
+      .datepicker-switch,
+      .next,
+      .dow{
+        text-align: center;
+      }
+      .active{
+        background: $brand-primary;
+        color:$textColor;
+      }
+      .prev,.next{
+        color: $brand-primary;
       }
     }
   }

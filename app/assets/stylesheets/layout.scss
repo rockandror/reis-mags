@@ -1,10 +1,8 @@
 @import "bootstrap_and_overrides";
-html {
-   height: 100%;
-}
+
 body {
   @include n-progress-mixin();
-  @include cookies-eu-customstyle(fixed);
+  @include cookies-eu-custom-style(fixed);
+  @include datapicker-custom-style(500px, false, white);
   color:$gray-base;
-  min-height: 100%;
 }

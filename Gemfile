@@ -10,10 +10,11 @@ gem 'bootstrap-sass'
 gem 'bootstrap_form'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
-
 gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails',
                               :git => 'git://github.com/Nerian/bootstrap-datepicker-rails.git'
 
+gem 'bootstrap-timepicker-rails', :require => 'bootstrap-timepicker-rails',
+                                                            :git => 'https://github.com/tispratik/bootstrap-timepicker-rails.git'
 
 gem 'jquery-rails'
 gem 'turbolinks'

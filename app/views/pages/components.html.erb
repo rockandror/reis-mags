@@ -22,16 +22,24 @@
   <h2>Datapicker</h2>
   <%= bootstrap_form_tag url: "#", method: :get do |f|%>
    <%= f.text_field :from_date,
-             hide_label: false,
-             placeholder: "Que dia empeza la actividad",
-             class: "datepicker",
-             readonly: "true",
-             wrapper_class: "icon-data-picker input-secondary" %>
+                    hide_label: false,
+                    placeholder: "Que dia empeza la actividad",
+                    class: "datepicker",
+                    readonly: "true",
+                    wrapper_class: "" %>
   <% end %>
   <hr>
 
   <hr>
   <h2>Timepicker</h2>
+  <%= bootstrap_form_tag url: "#", method: :get do |f|%>
+    <%= f.text_field :from_time,
+                     hide_label: false,
+                     placeholder: "Que hora empeza la actividad",
+                     class: "timepicker",
+                     readonly: "true",
+                     wrapper_class: "bootstrap-timepicker" %>
+    <% end %>
 
 
 <% end %>

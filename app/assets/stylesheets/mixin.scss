@@ -29,7 +29,6 @@
   @include n-progress-mixin();
 }
 
-
 @mixin block-landscape(){
   display: block;
   position: fixed;
@@ -57,7 +56,32 @@
     font-size: 3.3em;
   }
 }
-
 .block-landscape{
   @include block-landscape();
+}
+
+@mixin cookies-eu-customstyle($position){
+  .cookies-eu{
+    position: $position;
+    left:0;
+    right:0;
+    background: $brand-primary;
+    bottom: 0;
+    padding: 2em;
+    color: white;
+    .cookies-eu-button-holder{
+      display: block;
+      margin-top:1em;
+      button{
+        border:1px solid white;
+        background: transparent;
+        border-radius:4px;
+        padding:0.5em 1em;
+      }
+      a{
+        margin-left: 1em;
+        color:white;
+      }
+    }
+  }
 }

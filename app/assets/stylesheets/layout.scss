@@ -4,6 +4,7 @@ html {
 }
 body {
   @include n-progress-mixin();
+  @include cookies-eu-customstyle(fixed);
   color:$gray-base;
   min-height: 100%;
 }

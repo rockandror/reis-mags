@@ -136,6 +136,7 @@ GEM
     factory_girl_rails (4.7.0)
       factory_girl (~> 4.7.0)
       railties (>= 3.0.0)
+    fastclick-rails (1.0.1)
     font-awesome-rails (4.7.0.0)
       railties (>= 3.2, < 5.1)
     fuubar (2.2.0)
@@ -352,6 +353,7 @@ DEPENDENCIES
   devise-i18n (~> 1.1.0)
   enumerize!
   factory_girl_rails
+  fastclick-rails
   font-awesome-rails
   fuubar
   globalize (~> 5.0.0)

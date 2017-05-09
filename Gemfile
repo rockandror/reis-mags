@@ -19,6 +19,7 @@ gem 'bootstrap-timepicker-rails', :require => 'bootstrap-timepicker-rails',
 gem 'bootstrap-select-rails'
 gem 'jquery-minicolors-rails'
 gem "font-awesome-rails"
+gem 'fastclick-rails'
 
 gem 'jquery-rails'
 gem 'turbolinks'

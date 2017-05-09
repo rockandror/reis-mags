@@ -45,11 +45,26 @@ $(function() {
 
 });
 
+function is_touch_device() {
+ return (('ontouchstart' in window)
+      || (navigator.MaxTouchPoints > 0)
+      || (navigator.msMaxTouchPoints > 0));
+}
+
+function fastClick() {
+  if (is_touch_device()){
+    if ('addEventListener' in document) {
+      document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+      }, false);
+    }
+  }
+}
 
 
 var ready;
 ready = function() {
-  //fastClick();
+  fastClick();
   //alertPosition();
   //closeMenuOutside();
   //detectOrientationChange();

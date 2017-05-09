@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/Nerian/bootstrap-datepicker-rails.git
+  revision: 862e5ec85ee2da7cc8f893d6d07050cb0c1131b0
+  specs:
+    bootstrap-datepicker-rails (1.6.4.1)
+      railties (>= 3.0)
+
+GIT
   remote: https://github.com/brainspec/enumerize.git
   revision: ccaf23a265d50c6f2a402d04cabc450403d670c7
   specs:
@@ -319,6 +326,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-datepicker-rails!
   bootstrap-sass
   bootstrap_form
   byebug
@@ -364,4 +372,4 @@ RUBY VERSION
    ruby 2.3.0p0
 
 BUNDLED WITH
-   1.13.1
+   1.14.3

@@ -16,7 +16,16 @@
 //= require nprogress
 //= require nprogress-turbolinks
 //= require nprogress-ajax
+//= require bootstrap-datepicker/core
+//= require bootstrap-datepicker/locales/bootstrap-datepicker.es.js
 //= require cookies_eu
 //= require turbolinks
 // ** Analytics code must be placed after turbolinks scripts
 //= require analytics
+
+$(function() {
+  $('.datepicker').datepicker({
+    format: "dd/mm/yyyy",
+    autoclose: true
+  })
+});

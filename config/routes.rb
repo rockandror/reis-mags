@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
     get '/pages/cookies_policy' => 'pages#cookies_policy', :as => :cookies_policy_page
-
+    get "components", to: "pages#components"
     root "pages#show", page: "home"
   end
 end

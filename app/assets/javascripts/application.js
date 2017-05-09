@@ -22,6 +22,7 @@
 //= require bootstrap-select
 //= require jquery.minicolors
 //= require cookies_eu
+//= require jquery.turbolinks
 //= require turbolinks
 //= require turbolinks-compatibility
 

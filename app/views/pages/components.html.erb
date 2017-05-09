@@ -43,23 +43,37 @@
 
   <h2>Datapicker</h2>
   <%= bootstrap_form_tag url: "#", method: :get do |f|%>
-   <%= f.text_field :from_date,
-                    hide_label: false,
-                    placeholder: "Que dia empeza la actividad",
-                    class: "datepicker",
-                    readonly: "true",
-                    wrapper_class: "" %>
+    <%= f.text_field :from_date,
+                     hide_label: false,
+                     placeholder: "Datapicker sin icono",
+                     class: "datepicker",
+                     readonly: "true",
+                     wrapper_class: "" %>
+
+     <%= f.text_field :from_date,
+                      hide_label: false,
+                      placeholder: "Datapicker con icono",
+                      class: "datepicker",
+                      readonly: "true",
+                      wrapper_class: "input-icon-data-picker" %>
   <% end %>
   <hr>
 
   <h2>Timepicker</h2>
   <%= bootstrap_form_tag url: "#", method: :get do |f|%>
     <%= f.text_field :from_time,
+                   hide_label: false,
+                   placeholder: "Time picker sin icono",
+                   class: "timepicker",
+                   readonly: "true",
+                   wrapper_class: "bootstrap-timepicker" %>
+
+    <%= f.text_field :from_time,
                      hide_label: false,
-                     placeholder: "Que hora empeza la actividad",
+                     placeholder: "Time picker with icon",
                      class: "timepicker",
                      readonly: "true",
-                     wrapper_class: "bootstrap-timepicker" %>
+                     wrapper_class: "bootstrap-timepicker input-icon-time-picker" %>
     <% end %>
     <hr>
     <h2>Color Picker</h2>
@@ -96,4 +110,8 @@
       Email address en uso
     <% end %>
 
+    <hr>
+    <h2>Icons svg</h2>
+    <%= custom_icon('close-icon', 'icon-danger') %>
+    <hr>
 <% end %>

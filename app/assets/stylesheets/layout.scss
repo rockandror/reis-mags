@@ -4,5 +4,6 @@ body {
   @include n-progress-mixin();
   @include cookies-eu-custom-style(fixed);
   @include datapicker-custom-style(500px, false, white);
+  @include datapicker-timepicker-input-icon($brand-primary, false);
   color:$gray-base;
 }

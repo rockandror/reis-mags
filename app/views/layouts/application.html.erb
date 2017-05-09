@@ -20,6 +20,8 @@
   <%= yield %>
   <%= render '/shared/footer' %>
   <%= render 'cookies_eu/consent_banner', link: cookies_policy_page_path, target: :blank %>
-
+  <% if !@font_awesome.present? %>
+    <%= render 'shared/custom_svg_icons' %>
+  <% end %>
 </body>
 </html>

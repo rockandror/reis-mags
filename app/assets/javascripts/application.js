@@ -19,6 +19,8 @@
 //= require bootstrap-datepicker/core
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.es.js
 //= require bootstrap-timepicker
+//= require bootstrap-select
+//= require jquery.minicolors
 //= require cookies_eu
 //= require turbolinks
 // ** Analytics code must be placed after turbolinks scripts
@@ -36,5 +38,8 @@ $(function() {
     autoclose: true,
     disableFocus: true
   });
+
+  $('.selectpicker').selectpicker ();
+  $('.minicolors').minicolors()
 
 });

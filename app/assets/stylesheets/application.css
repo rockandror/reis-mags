@@ -14,5 +14,7 @@
  *= require nprogress-bootstrap
  *= require bootstrap_and_overrides
  *= require bootstrap-timepicker
+ *= require bootstrap-select
+ *= require jquery.minicolors
  *= require layout
  */

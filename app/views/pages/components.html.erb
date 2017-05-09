@@ -15,7 +15,7 @@
   <h2>Select Picker</h2>
   <%= bootstrap_form_tag url: "#", method: :get do |f|%>
     <%= f.select :priority, { hide_label: true, include_blank: "Selecciona una prioridad" },
-                   { class: "selectpicker input-secondary remove-aspect-select form-control"} %>
+                   { class: "selectpicker form-control"} %>
   <% end %>
   <hr>
 
@@ -39,6 +39,18 @@
                      class: "timepicker",
                      readonly: "true",
                      wrapper_class: "bootstrap-timepicker" %>
+    <% end %>
+    <hr>
+    <h2>Color Picker</h2>
+    <%= bootstrap_form_tag url: "#", method: :get do |f|%>
+      <%= f.text_field :color, hide_label: true, placeholder: "Color (HEX)", class: "minicolors" %>
+      <%#= f.select :tag_ids, options_for_select(
+                current_user.tags.map{|t| [t.name, t.id, { data: { content: "<span class='label' style='background: #{t.color}; color: #{contrastColor(t.color)};'>#{t.name}</span>"}} ]},
+                @task.tag_ids
+              ),
+              { hide_label: true },
+              class: "selectpicker input-secondary", multiple: true, size: 10,
+              data: { multiple_separator: "", none_selected_text: "Sin etiquetas" } %>
     <% end %>
 
 

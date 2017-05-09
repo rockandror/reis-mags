@@ -24,6 +24,7 @@
 //= require cookies_eu
 //= require turbolinks
 //= require turbolinks-compatibility
+
 // ** Analytics code must be placed after turbolinks scripts
 //= require analytics
 
@@ -61,13 +62,30 @@ function fastClick() {
   }
 }
 
+function detectOrientationChange(){
+  var isMobile = window.matchMedia("only screen and (max-width: 767px)");
+  if (isMobile.matches) {
+    if (window.matchMedia("(orientation: landscape)").matches) {
+      $('.block-landscape').removeClass('hidden');
+    }
+    $(window).on("orientationchange",function(){
+      if(window.orientation == 0){
+        $('.block-landscape').addClass('hidden');
+      }
+      else{
+        $('.block-landscape').removeClass('hidden');
+      }
+    });
+  }
+}
+
 
 var ready;
 ready = function() {
   fastClick();
   //alertPosition();
   //closeMenuOutside();
-  //detectOrientationChange();
+  detectOrientationChange();
   //touchOutIpad();
 };
 

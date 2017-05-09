@@ -1,13 +1,9 @@
 @import "bootstrap_and_overrides";
-
-
 html {
    height: 100%;
 }
-
 body {
   @include n-progress-mixin();
-  padding-top:50px;
   color:$gray-base;
   min-height: 100%;
 }

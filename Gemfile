@@ -23,6 +23,7 @@ gem 'fastclick-rails'
 
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'jquery-turbolinks'
 gem 'nprogress-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

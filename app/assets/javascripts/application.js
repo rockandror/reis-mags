@@ -23,6 +23,7 @@
 //= require jquery.minicolors
 //= require cookies_eu
 //= require turbolinks
+//= require turbolinks-compatibility
 // ** Analytics code must be placed after turbolinks scripts
 //= require analytics
 
@@ -42,4 +43,23 @@ $(function() {
   $('.selectpicker').selectpicker ();
   $('.minicolors').minicolors()
 
+});
+
+
+
+var ready;
+ready = function() {
+  //fastClick();
+  //alertPosition();
+  //closeMenuOutside();
+  //detectOrientationChange();
+  //touchOutIpad();
+};
+
+$(document).on('page:fetch', function() {
+  $('.overlay-nprogress').show();
+});
+$(document).on('page:change', function() {
+  ready();
+  $('.overlay-nprogress').hide();
 });

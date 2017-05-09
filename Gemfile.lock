@@ -352,6 +352,7 @@ DEPENDENCIES
   devise-i18n (~> 1.1.0)
   enumerize!
   factory_girl_rails
+  font-awesome-rails
   fuubar
   globalize (~> 5.0.0)
   globalize-accessors

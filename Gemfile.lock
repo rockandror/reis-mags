@@ -366,7 +366,6 @@ DEPENDENCIES
   jquery-minicolors-rails
   jquery-rails
   jquery-turbolinks
-  jquery-ui-rails
   letter_opener_web (~> 1.2.0)
   nprogress-rails
   pg

@@ -79,14 +79,29 @@ function detectOrientationChange(){
   }
 }
 
+function touchOutIpad(){
+  // Cierre del datepicker en iOS
+  document.documentElement.addEventListener("touchend", function(event){
+    if(!$(event.target).closest('.datepicker.datepicker-dropdown').length){
+      $('.datepicker').datepicker('hide');
+      $('.datepicker').blur();
+    }
+  }, false);
+  // Cierre del timepicker en iOS
+  document.documentElement.addEventListener("touchend", function(event){
+    if(!$(event.target).closest('.bootstrap-timepicker-widget.dropdown-menu.open').length){
+      $('.timepicker').timepicker('hideWidget');
+      $('.timepicker').blur();
+    }
+  }, false);
+}
+
 
 var ready;
 ready = function() {
   fastClick();
-  //alertPosition();
-  //closeMenuOutside();
   detectOrientationChange();
-  //touchOutIpad();
+  touchOutIpad();
 };
 
 $(document).on('page:fetch', function() {

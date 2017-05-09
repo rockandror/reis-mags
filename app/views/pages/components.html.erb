@@ -1,8 +1,30 @@
 <%= content_tag :div, class:"container" do %>
+
   <h2>Buttons</h2>
   <%= link_to "button 1", nil, class: "btn btn-primary btn-xs " %>
   <%= link_to "button 1", nil, class: "btn btn-primary btn-md " %>
   <%= link_to "button 1", nil, class: "btn btn-primary btn-lg " %>
+  <hr>
+
+  <h2>Check box & Radio button</h2>
+  <%= content_tag :div, class:"container" do %>
+    <%= bootstrap_form_tag url: "#", method: :get, class:"container" do |f|%>
+      <%= content_tag :div, class:"col-xs-2" do %>
+        <%= f.check_box :is_all_day do  %>
+              ¿Todo el día?
+              <span class="icon"><i class="fa fa-check"></i></span>
+        <% end %>
+      <% end %>
+      <%= content_tag :div, class:"col-xs-2" do %>
+        <%= f.label :autolyse, "Yes", :value => "true"  %>
+        <%= f.radio_button :autolyse, true %>
+      <% end %>
+      <%= content_tag :div, class:"col-xs-2" do %>
+        <%= f.label :autolyse, "No", :value => "false" %>
+        <%= f.radio_button :autolyse, false, :checked => true %>
+      <% end %>
+    <% end %>
+  <% end %>
   <hr>
 
   <h2>Input text</h2>
@@ -30,7 +52,6 @@
   <% end %>
   <hr>
 
-  <hr>
   <h2>Timepicker</h2>
   <%= bootstrap_form_tag url: "#", method: :get do |f|%>
     <%= f.text_field :from_time,
@@ -52,6 +73,27 @@
               class: "selectpicker input-secondary", multiple: true, size: 10,
               data: { multiple_separator: "", none_selected_text: "Sin etiquetas" } %>
     <% end %>
-
+    <hr>
+    <h2>Notice</h2>
+    <%= content_tag :div, class:"alert alert-info", role:'alert' do %>
+      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+      <span class="sr-only">Error:</span>
+      Enter a email address
+    <% end %>
+    <%= content_tag :div, class:"alert alert-danger", role:'alert' do %>
+      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+      <span class="sr-only">Error:</span>
+      Enter a valid email address
+    <% end %>
+    <%= content_tag :div, class:"alert alert-success", role:'alert' do %>
+      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+      <span class="sr-only">Error:</span>
+      Email address ok
+    <% end %>
+    <%= content_tag :div, class:"alert alert-warning", role:'alert' do %>
+      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+      <span class="sr-only">Error:</span>
+      Email address en uso
+    <% end %>
 
 <% end %>

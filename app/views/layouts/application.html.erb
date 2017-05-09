@@ -11,7 +11,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= render 'shared/block_landscape' %>
+  <% if @block_landscape.present? %>
+    <%= render 'shared/block_landscape' %>
+  <% end %>
   <div class="overlay-nprogress"></div>
   <%= render '/shared/nav' %>
   <%= render '/shared/notice' %>

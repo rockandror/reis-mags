@@ -26,10 +26,12 @@
 //= require turbolinks
 //= require turbolinks-compatibility
 //= require layout
+//= require selectpicker
 //= require datapicker
 //= require timepicker
 //= require colorpicker
 //= require device
+//= require checkbox
 
 // ** Analytics code must be placed after turbolinks scripts
 //= require analytics

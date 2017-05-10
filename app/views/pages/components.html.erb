@@ -9,20 +9,22 @@
   <h2>Check box & Radio button</h2>
   <%= content_tag :div, class:"container" do %>
     <%= bootstrap_form_tag url: "#", method: :get, class:"container" do |f|%>
-      <%= content_tag :div, class:"col-xs-2" do %>
-        <%= f.check_box :is_all_day do  %>
-              ¿Todo el día?
-              <span class="icon"><i class="fa fa-check"></i></span>
+
+      <%= content_tag :div, class:"col-xs-3 checkbox-custom" do %>
+        <%= f.check_box :check do  %>
+          Checkbox
+          <span class="icon"><i class="fa fa-check"></i></span>
         <% end %>
       <% end %>
-      <%= content_tag :div, class:"col-xs-2" do %>
-        <%= f.label :autolyse, "Yes", :value => "true"  %>
-        <%= f.radio_button :autolyse, true %>
+
+      <%= content_tag :div, class:"col-xs-3 radiobutton-custom" do %>
+        <%= f.form_group :check, label: { text: "Select Option" } do %>
+          <%= f.radio_button :skill_level, 0, label: "Yes", inline: true %>
+          <%= f.radio_button :skill_level, 1, label: "No", inline: true %>
+          <%= f.radio_button :skill_level, 2, label: "Maybe", inline: true %>
+        <% end %>
       <% end %>
-      <%= content_tag :div, class:"col-xs-2" do %>
-        <%= f.label :autolyse, "No", :value => "false" %>
-        <%= f.radio_button :autolyse, false, :checked => true %>
-      <% end %>
+
     <% end %>
   <% end %>
   <hr>
@@ -117,6 +119,6 @@
 
     <hr>
     <h2>Icons svg</h2>
-    <%= custom_icon('close-icon', 'icon-danger') %>
+    <%= custom_icon('close-icon', 'icon') %>
     <hr>
 <% end %>

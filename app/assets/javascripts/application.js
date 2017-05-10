@@ -32,6 +32,7 @@
 //= require colorpicker
 //= require device
 //= require checkbox
+//= require radiobutton
 
 // ** Analytics code must be placed after turbolinks scripts
 //= require analytics

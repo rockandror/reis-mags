@@ -3,7 +3,8 @@ ready = function() {
   fastClick();
   detectOrientationChange();
   touchOutIpad();
-  check_box();
+  check_box_custom();
+  radio_button_custom();
 };
 
 $(document).on('page:fetch', function() {

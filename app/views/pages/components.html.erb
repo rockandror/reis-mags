@@ -17,9 +17,9 @@
         <% end %>
       <% end %>
 
-      <%= content_tag :div, class:"col-xs-3 radiobutton-custom" do %>
+      <%= content_tag :div, class:"col-xs-8 col-xs-offset-1 radiobutton-custom" do %>
         <%= f.form_group :check, label: { text: "Select Option" } do %>
-          <%= f.radio_button :skill_level, 0, label: "Yes", inline: true %>
+          <%= f.radio_button :skill_level, 0, label: "Yes", inline: true, checked: true %>
           <%= f.radio_button :skill_level, 1, label: "No", inline: true %>
           <%= f.radio_button :skill_level, 2, label: "Maybe", inline: true %>
         <% end %>

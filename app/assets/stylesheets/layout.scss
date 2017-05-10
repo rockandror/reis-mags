@@ -12,6 +12,7 @@ body {
   @include minicolors-mixin($brand-primary, true, "\f1fb" );
   @include icon-svg-mixin(30px, 30px, $brand-primary);
   @include checkbox-custom-mixin();
+  @include radiobutton-custom-mixin($brand-primary, 'list');
 
   a:focus{
     outline:0;

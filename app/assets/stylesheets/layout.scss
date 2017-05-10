@@ -7,7 +7,9 @@ body {
   @include datapicker-timepicker-input-icon-mixin($brand-primary, true, "\f073", "\f017");
   @include bootstrap-timepicker-widget-mixin($brand-primary);
   @include bootstrap-select-mixin($brand-primary);
+  @include minicolors-mixin($brand-primary, false, "\f1fb" );
   color:$gray-base;
+
   a:focus{
     outline:0;
   }

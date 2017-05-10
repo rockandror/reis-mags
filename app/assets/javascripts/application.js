@@ -42,8 +42,8 @@ $(function() {
     disableFocus: true
   });
 
-  $('.selectpicker').selectpicker ();
-  $('.minicolors').minicolors()
+  $('select').selectpicker();
+  $('.minicolors').minicolors();
 
 });
 

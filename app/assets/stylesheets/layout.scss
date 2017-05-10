@@ -4,7 +4,11 @@ body {
   @include n-progress-mixin();
   @include cookies-eu-custom-style-mixin(fixed);
   @include datapicker-custom-style-mixin(500px, true, white);
-  @include datapicker-timepicker-input-icon-mixin($brand-primary, true);
+  @include datapicker-timepicker-input-icon-mixin($brand-primary, true, "\f073", "\f017");
   @include bootstrap-timepicker-widget-mixin($brand-primary);
+  @include bootstrap-select-mixin($brand-primary);
   color:$gray-base;
+  a:focus{
+    outline:0;
+  }
 }

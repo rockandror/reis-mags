@@ -31,13 +31,18 @@
   <%= bootstrap_form_tag url: "#", method: :get do |f|%>
     <%= f.text_field :name, hide_label: true, placeholder: "Título", wrapper_class: "" %>
     <%= f.text_area :description, hide_label: true, placeholder: "Descripción", wrapper_class: "" %>
+    <%= f.email_field :email, hide_label:true, placeholder: "* Email",  wrapper_class: "" %>
+    <%= f.phone_field :phone, hide_label:true, placeholder: "Telefono", wrapper_class: "" %>
+    <%= f.password_field :password, hide_label:true, placeholder: "* Contraseña", wrapper_class: "" %>
   <% end %>
   <hr>
 
   <h2>Select Picker</h2>
   <%= bootstrap_form_tag url: "#", method: :get do |f|%>
-    <%= f.select :priority, { hide_label: true, include_blank: "Selecciona una prioridad" },
-                   { class: "selectpicker form-control"} %>
+      <%= f.select :priority, {
+                    hide_label: true,
+                    include_blank: "Selecciona una prioridad" },
+                    { class: ""} %>
   <% end %>
   <hr>
 

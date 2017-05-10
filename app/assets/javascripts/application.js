@@ -25,90 +25,11 @@
 //= require jquery.turbolinks
 //= require turbolinks
 //= require turbolinks-compatibility
+//= require layout
+//= require datapicker
+//= require timepicker
+//= require colorpicker
+//= require device
 
 // ** Analytics code must be placed after turbolinks scripts
 //= require analytics
-
-$(function() {
-
-  $('.datepicker').datepicker({
-    format: "dd/mm/yyyy",
-    autoclose: true
-  })
-
-  $( ".timepicker" ).timepicker({
-    showMeridian: false,
-    autoclose: true,
-    disableFocus: true
-  });
-
-  $('select').selectpicker();
-  $('.minicolors').minicolors();
-
-});
-
-function is_touch_device() {
- return (('ontouchstart' in window)
-      || (navigator.MaxTouchPoints > 0)
-      || (navigator.msMaxTouchPoints > 0));
-}
-
-function fastClick() {
-  if (is_touch_device()){
-    if ('addEventListener' in document) {
-      document.addEventListener('DOMContentLoaded', function() {
-        FastClick.attach(document.body);
-      }, false);
-    }
-  }
-}
-
-function detectOrientationChange(){
-  var isMobile = window.matchMedia("only screen and (max-width: 767px)");
-  if (isMobile.matches) {
-    if (window.matchMedia("(orientation: landscape)").matches) {
-      $('.block-landscape').removeClass('hidden');
-    }
-    $(window).on("orientationchange",function(){
-      if(window.orientation == 0){
-        $('.block-landscape').addClass('hidden');
-      }
-      else{
-        $('.block-landscape').removeClass('hidden');
-      }
-    });
-  }
-}
-
-function touchOutIpad(){
-  // Cierre del datepicker en iOS
-  document.documentElement.addEventListener("touchend", function(event){
-    if(!$(event.target).closest('.datepicker.datepicker-dropdown').length){
-      $('.datepicker').datepicker('hide');
-      $('.datepicker').blur();
-    }
-  }, false);
-  // Cierre del timepicker en iOS
-  document.documentElement.addEventListener("touchend", function(event){
-    if(!$(event.target).closest('.bootstrap-timepicker-widget.dropdown-menu.open').length){
-      $('.timepicker').timepicker('hideWidget');
-      $('.timepicker').blur();
-    }
-  }, false);
-}
-
-
-var ready;
-ready = function() {
-  fastClick();
-  detectOrientationChange();
-  touchOutIpad();
-};
-
-$(document).on('page:fetch', function() {
-  $('.overlay-nprogress').show();
-});
-$(document).on('page:change', function() {
-  ready();
-  $('.overlay-nprogress').hide();
-});

@@ -6,6 +6,23 @@
   <%= link_to "button 1", nil, class: "btn btn-primary btn-lg " %>
   <hr>
 
+  <h2>Upload File</h2>
+  <%= content_tag :div, class:"container" do %>
+    <%= bootstrap_form_tag url: "#", method: :get, class:"container" do |f|%>
+      <div class="image text-center">
+
+        <div class="input-group upload">
+          <label class="btn">
+            Subir Foto ...
+            <%= f.file_field :avatar,  hide_label: true %>
+          </label>
+          <input type="text" class="form-control" readonly>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+  <hr/>
+
   <h2>Check box & Radio button</h2>
   <%= content_tag :div, class:"container" do %>
     <%= bootstrap_form_tag url: "#", method: :get, class:"container" do |f|%>

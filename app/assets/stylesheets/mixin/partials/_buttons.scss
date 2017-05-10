@@ -1,0 +1,23 @@
+//Button upload
+@mixin upload-custom-mixin($color){
+  .upload{
+    label{
+      border:1px solid $color;
+      color:$color;
+      margin-bottom:0;
+      .form-group{
+        display: none;
+      }
+    }
+    input{
+      text-align: center;
+      visibility: hidden;
+      border:none;
+      font-size: 12px;
+      background: transparent;
+    }
+    .form-control{
+      display: none;
+    }
+  }
+}

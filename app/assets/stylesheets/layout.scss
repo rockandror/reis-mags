@@ -2,8 +2,9 @@
 
 body {
   @include n-progress-mixin();
-  @include cookies-eu-custom-style(fixed);
-  @include datapicker-custom-style(500px, false, white);
-  @include datapicker-timepicker-input-icon($brand-primary, false);
+  @include cookies-eu-custom-style-mixin(fixed);
+  @include datapicker-custom-style-mixin(500px, true, white);
+  @include datapicker-timepicker-input-icon-mixin($brand-primary, true);
+  @include bootstrap-timepicker-widget-mixin($brand-primary);
   color:$gray-base;
 }

@@ -11,7 +11,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <% if @block_landscape.present? %>
+  <% if @lock_landscape %>
     <%= render 'shared/block_landscape' %>
   <% end %>
   <div class="overlay-nprogress"></div>
@@ -20,7 +20,7 @@
   <%= yield %>
   <%= render '/shared/footer' %>
   <%= render 'cookies_eu/consent_banner', link: cookies_policy_page_path, target: :blank %>
-  <% if !@font_awesome.present? %>
+  <% unless @font_awesome %>
     <%= render 'shared/custom_svg_icons' %>
   <% end %>
 </body>

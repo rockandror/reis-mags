@@ -29,7 +29,7 @@
   @include n-progress-mixin();
 }
 
-@mixin block-landscape(){
+@mixin block-landscape-mixin(){
   display: block;
   position: fixed;
   top:0;
@@ -57,10 +57,10 @@
   }
 }
 .block-landscape{
-  @include block-landscape();
+  @include block-landscape-mixin();
 }
 
-@mixin cookies-eu-custom-style($position){
+@mixin cookies-eu-custom-style-mixin($position){
   .cookies-eu{
     position: $position;
     left:0;
@@ -86,7 +86,7 @@
   }
 }
 
-@mixin datapicker-custom-style($width,$border, $textColor){
+@mixin datapicker-custom-style-mixin($width,$border, $textColor){
   .datepicker-dropdown{
     @if $border == true {
       border:1px solid $brand-primary;
@@ -111,7 +111,7 @@
   }
 }
 
-@mixin datapicker-timepicker-input-icon($color, $fontAwesome){
+@mixin datapicker-timepicker-input-icon-mixin($color, $fontAwesome){
   .input-icon-data-picker,.input-icon-time-picker{
     position: relative;
     &:before{
@@ -186,6 +186,14 @@
                         </svg>") no-repeat;
                         background-size: contain;
       }
+    }
+  }
+}
+
+@mixin bootstrap-timepicker-widget-mixin($arrowColor){
+  .bootstrap-timepicker-widget{
+    table td a{
+      color:$arrowColor;
     }
   }
 }

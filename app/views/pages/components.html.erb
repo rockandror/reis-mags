@@ -3,11 +3,12 @@
   <h2>Slider bootstrap</h2>
   <%= bootstrap_form_tag url: "#", method: :get, class:"container" do |f|%>
     <a href="http://seiyria.com/bootstrap-slider/" target="blank">Documumentation slider</a>
-
+    <br /><br />
     <%= content_tag :div, class: "row slider-custom" do %>
 
       <%= content_tag :div, class: "col-xs-4 text-center" do %>
-        <%= f.text_field :slide1, id: "slide1", hide_label: true, data: { slider_id: "ex1Slider",
+        <%= f.text_field :slide1, id: "slide1", hide_label: true, data: {
+                                                        slider_id: "slide1",
                                                         slider_min: "0",
                                                         slider_max: "20",
                                                         slider_step: "1",
@@ -18,13 +19,12 @@
       <% end %>
 
       <%= content_tag :div, class: "col-xs-4 text-center" do %>
-        <strong>10</strong>
-        <%= f.text_field :slide1, id: "slide2", hide_label: true, data: { slider_id: "ex1Slider",
+        <%= f.text_field :slide1, id: "slide2", hide_label: true, data: {
+                                                        slider_id: "slide2",
                                                         slider_min: "0",
                                                         slider_max: "1000",
                                                         slider_step: "5",
                                                         slider_value: "[250,450]"} %>
-        <strong>1000</strong>
       <% end %>
 
       <%= content_tag :div, class: "col-xs-4 text-center" do %>

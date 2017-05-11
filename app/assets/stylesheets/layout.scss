@@ -1,7 +1,7 @@
 @import "bootstrap_and_overrides";
 
 body {
-  color:$gray-base;
+  //color:$gray-base;
 
   @include n-progress-mixin();
   @include cookies-eu-custom-style-mixin(fixed);
@@ -12,7 +12,7 @@ body {
   @include minicolors-mixin($brand-primary, true, "\f1fb" );
   @include icon-svg-mixin(30px, 30px, $brand-primary);
   @include checkbox-custom-mixin();
-  @include radiobutton-custom-mixin($brand-primary, '');
+  @include radiobutton-custom-mixin($brand-primary, 'list');
   @include upload-custom-mixin($brand-primary);
   a:focus{
     outline:0;

@@ -20,6 +20,7 @@
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.es.js
 //= require bootstrap-timepicker
 //= require bootstrap-select
+//= require bootstrap-slider
 //= require jquery.minicolors
 //= require cookies_eu
 //= require jquery.turbolinks
@@ -33,6 +34,7 @@
 //= require device
 //= require checkbox
 //= require radiobutton
+//= require bootstrap_slider
 
 // ** Analytics code must be placed after turbolinks scripts
 //= require analytics

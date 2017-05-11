@@ -5,6 +5,7 @@ ready = function() {
   touchOutIpad();
   check_box_custom();
   radio_button_custom();
+  slider_bootstrap();
 };
 
 $(document).on('page:fetch', function() {

@@ -15,6 +15,7 @@
  *= require bootstrap_and_overrides
  *= require bootstrap-timepicker
  *= require bootstrap-select
+ *= require bootstrap-slider
  *= require jquery.minicolors
  *= require font-awesome
  *= require layout

@@ -20,6 +20,7 @@ gem 'bootstrap-select-rails'
 gem 'jquery-minicolors-rails'
 gem "font-awesome-rails"
 gem 'fastclick-rails'
+gem 'bootstrap-slider-rails'
 
 gem 'jquery-rails'
 gem 'turbolinks'

@@ -1,29 +1,89 @@
-// #carousel_thumbnail{
-//
-// }
-// /* Removes the default 20px margin and creates some padding space for the indicators and controls */
-// .carousel {
-//   margin-bottom: 0;
-// 	padding: 0 40px 30px 40px;
-// }
-// /* Reposition the controls slightly */
-// .carousel-control {
-// 	left: -12px;
-// }
-// .carousel-control.right {
-// 	right: -12px;
-// }
-// /* Changes the position of the indicators */
-// .carousel-indicators {
-// 	right: 50%;
-// 	top: auto;
-// 	bottom: 0px;
-// 	margin-right: -19px;
-// }
-// /* Changes the colour of the indicators */
-// .carousel-indicators li {
-// 	//background: #c0c0c0;
-// }
-// .carousel-indicators .active {
-//   //background: #333333;
-// }
+@mixin carousel-carousel-default-mixin($controlColor){
+  #carousel_default{
+    .carousel-control {
+      color:$controlColor;
+      &.right, &.left{
+        background: transparent;
+      }
+    }
+    .carousel-indicators{
+      li{
+        border-color: $controlColor;
+      }
+      .active{
+        background-color: $controlColor;
+      }
+    }
+  }
+}
+
+
+@mixin carousel-carousel-thumbnail-mixin($controlColor){
+  #carousel_thumbnail{
+    .carousel-control {
+      color:$controlColor;
+      &.right, &.left{
+        background: transparent;
+      }
+    }
+    .carousel-indicators{
+      li{
+        border-color: $controlColor;
+      }
+      .active{
+        background-color: $controlColor;
+      }
+    }
+  }
+}
+
+@mixin carousel-grid-mixin($controlColor){
+  $break-small: 1199px;
+  #carousel_grid{
+    .carousel-control {
+      color:$controlColor;
+      &.right, &.left{
+        background: transparent;
+      }
+    }
+    .thumbnail{
+      img{
+        //min-height: 80px;
+      }
+    }
+    .carousel-inner{
+      min-height: 500px;
+      height: 500px;
+      position: relative;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      .item{
+        height: 500px;
+        position: relative;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        img{
+          position: relative;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    @media screen and (max-width:$break-small) {
+      .carousel-inner{
+        min-height: 400px;
+        height: 400px;
+        .item{
+          height: 400px;
+        }
+      }
+    }
+  }
+
+
+}

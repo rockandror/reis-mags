@@ -1,8 +1,8 @@
+//Create a new component.scss
+
 @import "bootstrap_and_overrides";
 
 body {
-  //color:$gray-base;
-
   @include n-progress-mixin();
   @include cookies-eu-custom-style-mixin(fixed);
   @include datapicker-custom-style-mixin(500px, false, white);
@@ -11,10 +11,19 @@ body {
   @include bootstrap-select-mixin($brand-primary);
   @include minicolors-mixin($brand-primary, true, "\f1fb" );
   @include icon-svg-mixin(30px, 30px, $brand-primary);
+
+  //button Uplaod - move into button
+  @include upload-custom-mixin($brand-primary);
   @include checkbox-custom-mixin();
   @include radiobutton-custom-mixin($brand-primary, 'list');
-  @include upload-custom-mixin($brand-primary);
+
+  //Slider
   @include slider-custom-style-mixin($brand-primary,#f5f5f5, green, yellow, $brand-secondary);
+
+  //Caraousel
+  @include carousel-carousel-default-mixin($brand-primary);
+  @include carousel-carousel-thumbnail-mixin($brand-primary);
+  @include carousel-grid-mixin($brand-primary);
   a:focus, .btn:focus{
     outline:0;
   }

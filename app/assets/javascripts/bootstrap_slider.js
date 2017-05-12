@@ -26,8 +26,4 @@ function slider_bootstrap(){
 	   reversed : true
   });
 
-
-
-
-
 }

@@ -22,6 +22,8 @@
 //= require bootstrap-select
 //= require bootstrap-slider
 //= require jquery.minicolors
+//= require magnific-popup
+
 //= require cookies_eu
 //= require jquery.turbolinks
 //= require turbolinks
@@ -35,6 +37,7 @@
 //= require checkbox
 //= require radiobutton
 //= require bootstrap_slider
+//= require magnific_popup
 
 // ** Analytics code must be placed after turbolinks scripts
 //= require analytics

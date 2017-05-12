@@ -199,6 +199,7 @@ GEM
       rails (>= 3.2)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
+    magnific-popup-rails (1.1.0)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
     mime-types (3.1)
@@ -370,6 +371,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   letter_opener_web (~> 1.2.0)
+  magnific-popup-rails (~> 1.1.0)
   nprogress-rails
   pg
   poltergeist

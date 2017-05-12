@@ -6,6 +6,7 @@ ready = function() {
   check_box_custom();
   radio_button_custom();
   slider_bootstrap();
+  magnific_popup();
 };
 
 $(document).on('page:fetch', function() {

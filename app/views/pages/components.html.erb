@@ -1,19 +1,92 @@
 <%= content_tag :div, class:"container" do %>
 
-  <h2>Image</h2>
+  <div class="row">
+    <h2>Modal</h2>
+    <%= link_to 'Open Modal', '#myModal', class: 'btn btn-primary', data: {toggle: 'modal', target: '#myModal'} %>
 
+    <%= content_tag :div, class: "modal fade", id: 'myModal', role: 'dialog' do %>
+      <%= content_tag :div, class: "modal-dialog" do %>
+        <%= content_tag :div, class: "modal-content" do %>
+          <%= content_tag :div, class: "modal-header" do %>
+            <%= link_to '#myModal', class: 'close', data: {dismiss: 'modal'} do %>
+              &times;
+            <% end %>
+            <h4 class="modal-title">Modal Header</h4>
+          <% end %>
+          <%= content_tag :div, class: "modal-body" do %>
+            <p>Some text in the modal.</p>
+          <% end %>
+          <%= content_tag :div, class: "modal-footer" do %>
+            <%= link_to 'Close', '#myModal', class: 'btn btn-primary', data: {dismiss: 'modal'} %>
+          <% end %>
+        <% end %>
+      <% end %>
+    <% end %>
+
+  </div>
+  <hr>
 
   <div class="row">
+    <h2>Collapse</h2>
+    <h4>Simple Collapse</h4>
+    <%= link_to 'Simple collapsible', '#demo', class: 'btn btn-primary', data: {toggle:"collapse"} %>
+      <%= content_tag :div, class: "collapse", id: 'demo' do %>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      <% end %>
+    <h4>Collapse Panel</h4>
+    <%= content_tag :div, class: "bs-example" do %>
+      <%= content_tag :div, class: "panel-group", id:'accordion' do %>
+        <%= content_tag :div, class: "panel panel-primary" do %>
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <%= link_to '1. Suspender', '#collapseOne', data: {toggle: 'collapse', parent: '#accordion'} %>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of Web pages. <a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+            </div>
+          </div>
+        <% end %>
+        <%= content_tag :div, class: "panel panel-primary" do %>
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <%= link_to '2. Accordion', '#collapseTwo', data: {toggle: 'collapse', parent: '#accordion'} %>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+                <p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of Web pages. <a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+            </div>
+          </div>
+        <% end %>
+        <%= content_tag :div, class: "panel panel-primary" do %>
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <%= link_to '3. Rockandror', '#collapseThree', data: {toggle: 'collapse', parent: '#accordion'} %>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+                <p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of Web pages. <a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
+  <hr>
+
+  <div class="row">
+    <h2>Image</h2>
     <a href="http://dimsemenov.com/plugins/magnific-popup/documentation.html" target="blank"><strong>¿ Documumentation Magnific pop</strong></a>
-  </div>
-
-  <div class="row">
-    <h3>Link popup</h3>
+    <h4>Link popup</h4>
     <%= link_to 'Link image popup', 'http://www.uniwallpaper.com/static/images/Sunset-Village-Wallpaper_8I7ogbf.jpg', class: 'image-popup' %>
-  </div>
-  
-  <h3>Image with popup</h3>
-  <div class="row">
+
+    <h3>Image with popup</h3>
+    <div class="row">
     <div class="col-xs-4 text-center">
       <%= image_tag 'http://www.uniwallpaper.com/static/images/Sunset-Village-Wallpaper_8I7ogbf.jpg',
                      href: 'http://www.uniwallpaper.com/static/images/Sunset-Village-Wallpaper_8I7ogbf.jpg',
@@ -39,9 +112,8 @@
                      height:'120px' %>
     </div>
   </div>
-
-  <h3>With capition</h3>
-  <div class="row">
+    <h4>With capition</h4>
+    <div class="row">
      <div class="col-xs-4">
        <div class="thumbnail">
          <a href="http://www.uniwallpaper.com/static/images/Sunset-Village-Wallpaper_8I7ogbf.jpg" class="image-popup">
@@ -73,7 +145,8 @@
        </div>
      </div>
    </div>
-  <hr>
+  </div>
+ <hr>
 
   <h2>Carousel</h2>
     <%= content_tag :div, class: "carousel slide", id: "myCarousel", data: {ride: "carousel"} do %>

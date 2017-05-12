@@ -39,6 +39,7 @@
 //= require bootstrap_slider
 //= require magnific_popup
 //= require tooltips
+//= require popover
 
 // ** Analytics code must be placed after turbolinks scripts
 //= require analytics

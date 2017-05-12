@@ -1,3 +1,19 @@
+//Button secondary
+.btn-secondary {
+  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+}
+
+.btn-primary-outline {
+  @include button-variant($btn-primary-border, white, $btn-primary-border);
+}
+.btn-secondary-outline {
+  @include button-variant($btn-secondary-border, white, $btn-secondary-border);
+}
+
+
+
+
+
 //Button upload
 @mixin upload-custom-mixin($color){
   .upload{

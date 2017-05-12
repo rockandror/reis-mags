@@ -8,8 +8,9 @@ ready = function() {
   slider_bootstrap();
   magnific_popup();
   tooltips();
-
+  popover();
 };
+
 
 $(document).on('page:fetch', function() {
   $('.overlay-nprogress').show();

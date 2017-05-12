@@ -1,6 +1,23 @@
 <%= content_tag :div, class:"container" do %>
 
   <div class="row">
+    <h2>ToolTips</h2>
+    <div class="col-xs-3">
+      <%= link_to 'Hover over me', '#', class: 'btn btn-primary', data: {toggle: 'tooltip', placement: 'top'}, title: "Yes Hover top" %>
+    </div>
+    <div class="col-xs-3">
+      <%= link_to 'Hover over me', '#', class: 'btn btn-primary', data: {toggle: 'tooltip', placement: 'left'}, title: "Yes Hover Left" %>
+    </div>
+    <div class="col-xs-3">
+      <%= link_to 'Hover over me', '#', class: 'btn btn-primary', data: {toggle: 'tooltip', placement: 'right'}, title: "Yes Hover Right" %>
+    </div>
+    <div class="col-xs-3">
+      <%= link_to 'Hover over me', '#', class: 'btn btn-primary', data: {toggle: 'tooltip', placement: 'bottom'}, title: "Yes Hover Bottom" %>
+    </div>
+  </div>
+  <hr>
+
+  <div class="row">
     <h2>Modal</h2>
     <%= link_to 'Open Modal', '#myModal', class: 'btn btn-primary', data: {toggle: 'modal', target: '#myModal'} %>
 

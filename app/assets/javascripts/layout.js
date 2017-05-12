@@ -7,6 +7,8 @@ ready = function() {
   radio_button_custom();
   slider_bootstrap();
   magnific_popup();
+  tooltips();
+
 };
 
 $(document).on('page:fetch', function() {

@@ -9,6 +9,7 @@ ready = function() {
   magnific_popup();
   tooltips();
   popover();
+  carousel();
 };
 
 

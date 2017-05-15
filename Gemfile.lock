@@ -345,6 +345,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   bootstrap-datepicker-rails!
   bootstrap-sass
   bootstrap-select-rails

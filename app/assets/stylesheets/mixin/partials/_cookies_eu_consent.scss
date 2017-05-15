@@ -1,9 +1,9 @@
-@mixin cookies-eu-custom-style-mixin($position){
+@mixin cookies-eu-custom-style-mixin($position, $color){
   .cookies-eu{
     position: $position;
     left:0;
     right:0;
-    background: $brand-primary;
+    background: $color;
     bottom: 0;
     padding: 2em;
     color: white;

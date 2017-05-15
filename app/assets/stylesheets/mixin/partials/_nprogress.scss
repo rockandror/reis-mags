@@ -1,4 +1,4 @@
-@mixin n-progress-mixin(){
+@mixin n-progress-mixin($color){
   .overlay-nprogress{
     position: fixed;
     top:0;
@@ -11,7 +11,7 @@
   }
   #nprogress{
     .bar{
-      background:$brand-primary;
+      background:$color;
     }
     .spinner{
       position: fixed;
@@ -20,11 +20,11 @@
       z-index: 9999;
     }
     .spinner-icon{
-      border-top-color: $brand-primary;
-      border-left-color: $brand-primary;
+      border-top-color: $color;
+      border-left-color: $color;
     }
   }
 }
 .n-progress {
-  @include n-progress-mixin();
+  @include n-progress-mixin($brand-primary);
 }

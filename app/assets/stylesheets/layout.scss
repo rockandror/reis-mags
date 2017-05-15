@@ -3,28 +3,42 @@
 @import "bootstrap_and_overrides";
 
 body {
-  @include n-progress-mixin();
-  @include cookies-eu-custom-style-mixin(fixed);
+  //Flag - vertical horizontal - width - height
+  @include flags-mixin('horizontal', 30px, 30px);
+  //Nprogress
+  @include n-progress-mixin($brand-primary);
+  //Cookie consent
+  @include cookies-eu-custom-style-mixin(fixed,$brand-primary);
+  // Data picker
   @include datapicker-custom-style-mixin(500px, false, white);
-  @include datapicker-timepicker-input-icon-mixin($brand-primary, true, "\f073", "\f017");
+  //Time picker Icons
   @include bootstrap-timepicker-widget-mixin($brand-primary);
+  // Data picker and Time picker Icons
+  @include datapicker-timepicker-input-icon-mixin($brand-primary, true, "\f073", "\f017");
+  //Bootstrao select
   @include bootstrap-select-mixin($brand-primary);
+  //Color picker
   @include minicolors-mixin($brand-primary, true, "\f1fb" );
+  //Icons Svg
   @include icon-svg-mixin(30px, 30px, $brand-primary);
-
   //button Uplaod - move into button
   @include upload-custom-mixin($brand-primary);
+  //Checkbox
   @include checkbox-custom-mixin();
+  //Radio button
   @include radiobutton-custom-mixin($brand-primary, 'list');
-
   //Slider
   @include slider-custom-style-mixin($brand-primary,#f5f5f5, green, yellow, $brand-secondary);
-
   //Caraousel
   @include carousel-carousel-default-mixin($brand-primary);
   @include carousel-carousel-thumbnail-mixin($brand-primary);
   @include carousel-grid-mixin($brand-primary);
   a:focus, .btn:focus{
     outline:0;
+  }
+  .btn{
+    &:hover{
+      border: 1px solid transparent;
+    }
   }
 }

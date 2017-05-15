@@ -1,7 +1,71 @@
 <%= content_tag :div, class:"container" do %>
-  <!-- Flag -->
-  <h2>Flag</h2>
+  <!-- Toggle -->
   <div class="row">
+    <h2>Toggle</h2>
+    <a href="http://www.bootstraptoggle.com" target="blank"><strong>¿ Documumentation Bootstrap toggle</strong></a>
+    <br><br>
+    <%= content_tag :div, class:"container" do %>
+      <%= bootstrap_form_tag url: "#", method: :get, class:"container" do |f|%>
+        <%= content_tag :div, class:"col-xs-2" do %>
+        <strong>Checked</strong>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'large'}, checked: true %>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'normal'}, checked: true %>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'small'}, checked: true %>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'mini'}, checked: true %>
+        <% end %>
+        <%= content_tag :div, class:"col-xs-2" do %>
+        <strong>Disabled</strong>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'large'}, disabled: true %>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'normal'}, disabled: true %>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'small'}, disabled: true %>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'mini'}, disabled: true %>
+        <% end %>
+        <%= content_tag :div, class:"col-xs-2" do %>
+          <strong>Class color</strong>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'large', onstyle: 'primary'}, checked: true %>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'normal', onstyle: 'secondary'}, checked: true %>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'normal', onstyle: 'success'}, checked: true %>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'small', onstyle: 'info'}, checked: true %>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'mini', onstyle: 'warning'}, checked: true %>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'mini', onstyle: 'danger'}, checked: true %>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'mini', onstyle: 'default'}, checked: true %>
+        <% end %>
+        <%= content_tag :div, class:"col-xs-2" do %>
+          <strong>Mix color</strong>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'large', onstyle: 'primary', offstyle: 'success'}, checked: true %>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'normal', onstyle: 'secondary', offstyle: 'primary'}, checked: true %>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'normal', onstyle: 'success', offstyle: 'danger'}, checked: true %>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'small', onstyle: 'info', offstyle: 'warning'}, checked: true %>
+          <%= f.check_box '', data: {toggle:'toggle', size: 'mini', onstyle: 'warning', offstyle: 'success'}, checked: true %>
+        <% end %>
+        <%= content_tag :div, class:"col-xs-2" do %>
+          <strong>Custom text</strong>
+          <%= f.check_box '', data: {toggle:'toggle', on: 'ready', off: 'not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger'}, checked: true %>
+          <strong>With icon</strong>
+          <%= f.check_box '', data: {toggle:'toggle', on: '<i class="fa fa-play"></i> Play ready', off: '<i class="fa fa-pause"></i> not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger'}, checked: true %>
+          <strong>IOS style</strong>
+          <%= f.check_box '', data: {toggle:'toggle', on: 'Play ready', off: 'not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger', style: "ios"}, checked: true %>
+        <% end %>
+        <%= content_tag :div, class:"col-xs-2" do %>
+          <strong>Slow animate</strong>
+          <%= f.check_box '', data: {toggle:'toggle', on: 'ready', off: 'not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger', style:'slow'}, checked: true %>
+          <strong>Fast animate</strong>
+           <%= f.check_box '', data: {toggle:'toggle', on: 'ready', off: 'not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger', style:'fast'}, checked: true %>
+          <strong>Quick animate</strong>
+           <%= f.check_box '', data: {toggle:'toggle', on: 'ready', off: 'not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger', style:'quick'}, checked: true %>
+        <% end %>
+
+      <% end %>
+    <% end %>
+  </div>
+  <hr>
+
+
+
+
+  <!-- Flags -->
+  <div class="row">
+    <h2>Flag</h2>
     <%= link_to '#',
                 class: 'btn-flag',
                 data: {toggle: 'tooltip', placement: 'top'},

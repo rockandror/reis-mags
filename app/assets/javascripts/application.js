@@ -21,6 +21,7 @@
 //= require bootstrap-timepicker
 //= require bootstrap-select
 //= require bootstrap-slider
+//= require bootstrap-toggle
 //= require jquery.minicolors
 //= require magnific-popup
 

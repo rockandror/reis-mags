@@ -95,6 +95,7 @@ GEM
     bootstrap-select-rails (1.6.3)
     bootstrap-slider-rails (9.2.0)
       railties (>= 3.2, < 6.0)
+    bootstrap-toggle-rails (2.2.1.0)
     bootstrap_form (2.5.2)
     builder (3.2.2)
     byebug (9.0.6)
@@ -349,6 +350,7 @@ DEPENDENCIES
   bootstrap-select-rails
   bootstrap-slider-rails
   bootstrap-timepicker-rails!
+  bootstrap-toggle-rails
   bootstrap_form
   byebug
   capybara

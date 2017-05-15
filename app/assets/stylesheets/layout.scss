@@ -29,10 +29,16 @@ body {
   @include radiobutton-custom-mixin($brand-primary, 'list');
   //Slider
   @include slider-custom-style-mixin($brand-primary,#f5f5f5, green, yellow, $brand-secondary);
-  //Caraousel
+  //Bootstrao Caraousel default
   @include carousel-carousel-default-mixin($brand-primary);
+  //Bootstrap Carousel Thumbnail
   @include carousel-carousel-thumbnail-mixin($brand-primary);
+  //Bootstrap Carousel Grid
   @include carousel-grid-mixin($brand-primary);
+  //Bootstrap toggle
+  @include bootstrap-toggle-mixin();
+
+  //Override bootstrap - move
   a:focus, .btn:focus{
     outline:0;
   }

@@ -21,12 +21,15 @@ gem 'jquery-minicolors-rails'
 gem "font-awesome-rails"
 gem 'fastclick-rails'
 gem 'bootstrap-slider-rails'
+gem 'bootstrap-toggle-rails'
+
 
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'nprogress-rails'
 gem 'magnific-popup-rails', '~> 1.1.0'
+
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'

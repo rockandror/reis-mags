@@ -10,6 +10,7 @@ ready = function() {
   tooltips();
   popover();
   carousel();
+  toggle_bootstrap();
 };
 
 

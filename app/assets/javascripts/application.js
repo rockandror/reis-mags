@@ -38,6 +38,7 @@
 //= require checkbox
 //= require radiobutton
 //= require bootstrap_slider
+//= require bootstrap_toggle
 //= require magnific_popup
 //= require tooltips
 //= require popover

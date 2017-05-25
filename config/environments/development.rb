@@ -14,11 +14,11 @@ Rails.application.configure do
   config.action_controller.perform_caching = false
 
   config.action_mailer.delivery_method = :letter_opener
- 
-  # premailer-rails path
-  config.action_mailer.preview_path = "#{Rails.root}/spec/mailers/previews"  
 
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }  
+  # premailer-rails path
+  config.action_mailer.preview_path = "#{Rails.root}/spec/mailers/previews"
+
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
 
   # Don't care if the mailer can't send.
@@ -46,4 +46,8 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Automatically inject JavaScript needed for LiveReload
+   config.middleware.insert_after(ActionDispatch::Static, Rack::LiveReload)
+   
 end

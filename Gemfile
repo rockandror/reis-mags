@@ -70,6 +70,10 @@ group :development do
   gem 'spring'
   gem 'letter_opener_web', '~> 1.2.0'
   gem 'quiet_assets'
+  gem "guard", ">= 2.2.2", :require => false
+  gem "guard-livereload",  :require => false
+  gem "rack-livereload"
+  gem "rb-fsevent",        :require => false
 end
 
 group :test do

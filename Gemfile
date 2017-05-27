@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.3.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '4.2.8'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -16,7 +16,7 @@ gem 'bootstrap-timepicker-rails',
   git: 'https://github.com/tispratik/bootstrap-timepicker-rails.git'
 gem 'bootstrap-select-rails'
 gem 'jquery-minicolors-rails'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 gem 'fastclick-rails'
 gem 'bootstrap-slider-rails'
 gem 'bootstrap-toggle-rails'
@@ -26,7 +26,7 @@ gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'nprogress-rails'
 gem 'magnific-popup-rails', '~> 1.1.0'
-gem "autoprefixer-rails"
+gem 'autoprefixer-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
@@ -38,7 +38,7 @@ gem 'pg'
 
 # Application specific gems
 gem 'premailer-rails'
-gem 'enumerize', git: "https://github.com/brainspec/enumerize.git"
+gem 'enumerize', git: 'https://github.com/brainspec/enumerize.git'
 
 # Model translations
 gem 'globalize', '~> 5.0.0'
@@ -47,13 +47,16 @@ gem 'globalize-validations'
 
 gem 'devise'
 gem 'devise-i18n', '~> 1.1.0'
-#gem 'rails_admin_rollincode', git: "https://github.com/BoatjumpSL/rails_admin_theme.git"
+#gem 'rails_admin_rollincode', git: 'https://github.com/BoatjumpSL/rails_admin_theme.git'
 gem 'rails_admin-i18n'
 gem 'rails_admin_globalize_field'
 gem 'rails_admin_nestable', '~> 0.3.2'
 gem 'rails_admin_toggleable'
-gem "rails_admin_map_field", git: "https://github.com/dkobia/rails_admin_map_field.git"
-gem 'rails_admin', git: 'https://github.com/sferik/rails_admin.git'
+gem 'rails_admin_map_field',
+  git: 'https://github.com/dkobia/rails_admin_map_field.git'
+gem 'rails_admin',
+  git: 'https://github.com/sferik/rails_admin.git'
+gem 'haml-rails', "~> 0.9"
 
 # Cookies consent
 gem 'cookies_eu'
@@ -67,10 +70,10 @@ group :development do
   gem 'spring'
   gem 'letter_opener_web', '~> 1.2.0'
   gem 'quiet_assets'
-  gem "guard", ">= 2.2.2", :require => false
-  gem "guard-livereload",  :require => false
-  gem "rack-livereload"
-  gem "rb-fsevent",        :require => false
+  gem 'guard', '>= 2.2.2', :require => false
+  gem 'guard-livereload',  :require => false
+  gem 'rack-livereload'
+  gem 'rb-fsevent',        :require => false
 end
 
 group :test do

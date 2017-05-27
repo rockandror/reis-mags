@@ -2,16 +2,27 @@
 <html>
 <head>
   <title>Suspender</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= favicon_link_tag 'favicon.ico' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <% if @lock_landscape %>
+    <%= render 'shared/block_landscape' %>
+  <% end %>
+  <div class="overlay-nprogress"></div>
   <%= render '/shared/nav' %>
   <%= render '/shared/notice' %>
   <%= yield %>
   <%= render '/shared/footer' %>
-  <%= render 'cookies_eu/consent_banner', link: cookies_policy_page_path, target: :blank %>
-
+  <%= render 'cookies_eu/consent_banner', link: cookies_policy_path, target: :blank %>
+  <!-- <% unless @font_awesome %> //de momento lo he comentado porque en components no se ve ni un solo icono
+    <%= render 'shared/custom_svg_icons' %>
+  <% end %> -->
+  <%= render 'shared/custom_svg_icons' %>
 </body>
 </html>

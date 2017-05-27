@@ -1,0 +1,30 @@
+@mixin block-landscape-mixin(){
+  display: block;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width: 100%;
+  background: $brand-primary;
+  z-index: 99;
+  p,i,small{
+    position: absolute;
+    left:0;
+    right:0;
+    top:40%;
+    color:white;
+    text-align: center;
+    font-size: 1.3em;
+  }
+  small{
+    top:60%;
+  }
+  i{
+    top:70%;
+    font-size: 3.3em;
+  }
+}
+.block-landscape{
+  @include block-landscape-mixin();
+}

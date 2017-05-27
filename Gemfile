@@ -10,12 +10,10 @@ gem 'bootstrap-sass'
 gem 'bootstrap_form'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
-gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails',
-                                  :git => 'git://github.com/Nerian/bootstrap-datepicker-rails.git'
-
-gem 'bootstrap-timepicker-rails', :require => 'bootstrap-timepicker-rails',
-                                  :git => 'https://github.com/tispratik/bootstrap-timepicker-rails.git'
-
+gem 'bootstrap-datepicker-rails',
+  git: 'https://github.com/Nerian/bootstrap-datepicker-rails.git'
+gem 'bootstrap-timepicker-rails',
+  git: 'https://github.com/tispratik/bootstrap-timepicker-rails.git'
 gem 'bootstrap-select-rails'
 gem 'jquery-minicolors-rails'
 gem "font-awesome-rails"
@@ -29,8 +27,6 @@ gem 'jquery-turbolinks'
 gem 'nprogress-rails'
 gem 'magnific-popup-rails', '~> 1.1.0'
 gem "autoprefixer-rails"
-
-
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
@@ -59,6 +55,7 @@ gem 'rails_admin_toggleable'
 gem "rails_admin_map_field", git: "https://github.com/dkobia/rails_admin_map_field.git"
 gem 'rails_admin', git: 'https://github.com/sferik/rails_admin.git'
 
+# Cookies consent
 gem 'cookies_eu'
 
 group :development, :test do
@@ -85,4 +82,8 @@ group :test do
   gem 'fuubar'
   gem 'poltergeist'
   gem 'show_me_the_cookies'
+end
+
+group :production do
+  gem 'rails_12factor'
 end

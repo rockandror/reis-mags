@@ -1,0 +1,9 @@
+es:
+  components:
+    title: Página de componentes
+    description: Ejemplos de los componentes preparados para su uso en la aplicación
+
+en:
+  components:
+    title: Components page
+    description: Ready to use components examples

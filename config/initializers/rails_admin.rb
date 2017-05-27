@@ -2,10 +2,10 @@ RailsAdmin.config do |config|
   config.current_user_method(&:current_user)
 
   config.authorize_with do |controller|
-    if current_user && current_user.owner?
+    if current_user && current_user.user?
       sign_out @user
       redirect_to main_app.new_user_session_url, alert: "Acceso denegado!"
-    end    
+    end
     warden.authenticate! scope: :user
   end
 

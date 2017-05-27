@@ -2,14 +2,14 @@ require 'rails_helper'
 
 feature "Admin sesions", :type => :feature do
 
-  let!(:user_owner) { create(:user, role: :owner) }
+  let!(:user) { create(:user, role: :user) }
   let!(:user_admin) { create(:user, role: :admin) }
 
-  scenario 'Owner users cannot be logged into backend' do
+  scenario 'Normal users cannot be logged into backend' do
     visit rails_admin_path
 
-    fill_in 'Correo electrónico', with: user_owner.email
-    fill_in 'Contraseña', with: user_owner.password
+    fill_in 'Correo electrónico', with: user.email
+    fill_in 'Contraseña', with: user.password
     click_button 'Iniciar sesión'
 
     expect(page).to have_content "Tienes que iniciar sesión o registrarte para poder continuar."

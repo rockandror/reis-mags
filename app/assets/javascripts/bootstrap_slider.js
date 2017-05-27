@@ -1,5 +1,5 @@
 function slider_bootstrap(){
-
+  console.log('slider_bootstrap');
   //0 to 100
   $('#slide1').slider({
   	formatter: function(value) {
@@ -14,7 +14,6 @@ function slider_bootstrap(){
     range: true,
     value: [3, 7]
   });
-
 
   //0 to 100
   $("#slide2").slider({

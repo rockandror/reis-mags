@@ -16,11 +16,18 @@
 !/log/.keep
 /tmp
 
+# Development environment specific files
 config/database.yml
 config/environments/development.rb
 
+# Redis database
 dump.rdb
 
 # Ignore Byebug command history file.
 .byebug_history
 
+# Ignore .DS_Store for Mac developers
+.DS_Store
+
+# Ignore local directory for file uploads
+public/uploads

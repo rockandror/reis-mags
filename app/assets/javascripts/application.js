@@ -10,10 +10,18 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 //= require jquery
 //= require jquery_ujs
+//= require jquery.turbolinks
+//= require turbolinks
+//= require turbolinks-compatibility
+
+// ** Analytics code must be placed after turbolinks scripts
+//= require analytics
 //= require bootstrap-sprockets
 //= require nprogress
+//= require nprogress-config
 //= require nprogress-turbolinks
 //= require nprogress-ajax
 //= require bootstrap-datepicker/core
@@ -24,11 +32,6 @@
 //= require bootstrap-toggle
 //= require jquery.minicolors
 //= require magnific-popup
-
-//= require cookies_eu
-//= require jquery.turbolinks
-//= require turbolinks
-//= require turbolinks-compatibility
 //= require layout
 //= require selectpicker
 //= require datapicker
@@ -43,6 +46,5 @@
 //= require tooltips
 //= require popover
 //= require carousel
-
-// ** Analytics code must be placed after turbolinks scripts
-//= require analytics
+//= require cookies_eu
+//= require nprogress-config

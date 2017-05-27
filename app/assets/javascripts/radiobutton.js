@@ -1,5 +1,5 @@
 function radio_button_custom(){
-
+  console.log('radio_button_custom');
   var radioCheck = $('.radiobutton-custom .form-group .radio-inline input');
   //Initializer
   $.each($('input[type="radio"]:checked'),function(){

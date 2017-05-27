@@ -1,5 +1,5 @@
 function carousel(){
-
+console.log('carousel');
   //carousel_thumbnail
   $('#carousel_thumbnail').carousel({
     interval: 7000

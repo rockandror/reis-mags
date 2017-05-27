@@ -1,4 +1,5 @@
 this.GoogleAnalytics = (function() {
+  console.log('Load analytics');
   function GoogleAnalytics() {}
 
   GoogleAnalytics.load = function() {

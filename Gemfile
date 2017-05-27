@@ -22,7 +22,7 @@ gem 'bootstrap-slider-rails'
 gem 'bootstrap-toggle-rails'
 
 gem 'jquery-rails'
-gem 'turbolinks'
+gem 'turbolinks', '~> 5'
 gem 'jquery-turbolinks'
 gem 'nprogress-rails'
 gem 'magnific-popup-rails', '~> 1.1.0'

@@ -1,4 +1,5 @@
 function check_box_custom(){
+  console.log('check_box_custom');
   var check = $('.checkbox-custom input');
   //Initializer
   $.each($('input:checked'),function(index, checkbox){

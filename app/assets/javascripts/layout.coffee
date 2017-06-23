@@ -19,6 +19,7 @@ jQuery ->
   tooltips()
   popover()
   carousel()
+  scroll_top()
   toggle_bootstrap()
 
 $(document).on('page:fetch', showLoadingOverlay)

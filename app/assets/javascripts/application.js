@@ -46,5 +46,6 @@
 //= require tooltips
 //= require popover
 //= require carousel
+//= require scroll_top
 //= require cookies_eu
 //= require nprogress-config

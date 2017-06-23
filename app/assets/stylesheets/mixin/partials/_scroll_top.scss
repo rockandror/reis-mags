@@ -1,0 +1,22 @@
+//Bottom Right button RB
+@mixin go-to-top-mixin($alignament, $width, $height){
+  #scroll-top {
+    position: fixed;
+    bottom: 0;
+    line-height: 0;
+    svg{
+      height: $height;
+      width: $width;
+
+      @include breakpoint(xs) {
+        height: $height / 1.5;
+        width: $width / 1.5;
+      }
+    }
+    @if ($alignament == 'BR'){
+      right: 0;
+    }@else{
+      left: 0;
+    }
+  }
+}

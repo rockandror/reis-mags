@@ -37,6 +37,8 @@ body {
   @include carousel-grid-mixin($brand-primary);
   //Bootstrap toggle
   @include bootstrap-toggle-mixin();
+  //Scroll top
+  @include go-to-top-mixin('BR', 60px, 60px);
 
   //Override bootstrap - move
   a:focus, .btn:focus{

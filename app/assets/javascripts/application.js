@@ -48,3 +48,4 @@
 //= require carousel
 //= require cookies_eu
 //= require nprogress-config
+//= require scroll_navbar

@@ -20,6 +20,7 @@ jQuery ->
   popover()
   carousel()
   toggle_bootstrap()
+  scroll_navbar()
 
 $(document).on('page:fetch', showLoadingOverlay)
 $(document).on('page:change', hideLoadingOverlay)

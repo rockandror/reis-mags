@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse">
+<nav id="navbar" class="navbar navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -8,7 +8,9 @@
         <span class="icon-bar"></span>
       </button>
       <%= link_to root_path, class: 'navbar-brand' do %>
-        <span>Rock&RoR Suspender</span>
+        <div class="logo-text">
+          <span>Rock&RoR Suspender</span>
+        </div>
       <% end %>
     </div>
     <div id="navbar" class="collapse navbar-collapse">

@@ -6,6 +6,8 @@ hideLoadingOverlay = () ->
   console.log('Hide Loading overlay')
   $('.overlay-nprogress').hide()
 
+$(window).resize ->
+  scroll_navbar()
 
 jQuery ->
   console.log('Running')

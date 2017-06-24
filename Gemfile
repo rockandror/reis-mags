@@ -6,9 +6,7 @@ gem 'rails', '4.2.8'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-#gem 'bootstrap-sass'
-gem 'bootstrap-sass', 'https://github.com/twbs/bootstrap-rubygem'
-
+gem 'bootstrap-sass'
 gem 'bootstrap_form'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'

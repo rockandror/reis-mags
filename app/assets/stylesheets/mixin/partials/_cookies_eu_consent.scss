@@ -1,9 +1,8 @@
 @mixin cookies-eu-custom-style-mixin($position, $color) {
   .cookies-eu {
-
     position: $position;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     background: $color;
     bottom: 0;
     padding: 2em;
@@ -11,18 +10,18 @@
 
     .cookies-eu-button-holder {
       display: block;
-      margin-top:1em;
+      margin-top: 1em;
 
       button {
-        border:1px solid white;
+        border: 1px solid #fff;
         background: transparent;
-        border-radius:4px;
-        padding:0.5em 1em;
+        border-radius: 4px;
+        padding: 0.5em 1em;
       }
 
       a {
         margin-left: 1em;
-        color:white;
+        color: #fff;
       }
     }
   }

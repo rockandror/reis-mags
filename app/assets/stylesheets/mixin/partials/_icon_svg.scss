@@ -1,7 +1,7 @@
-@mixin icon-svg-mixin($width, $height,$color){
-  .icon{
+@mixin icon-svg-mixin($width, $height, $color) {
+  .icon {
     width: $width;
     height: $height;
-    fill:$color;
+    fill: $color;
   }
 };

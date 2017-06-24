@@ -365,7 +365,7 @@
  <hr>
  <!-- Carousel -->
   <h2>Carousel</h2>
-  <%= content_tag :div, class: "carousel slide", id: "carousel_default", data: {ride: "carousel"} do %>
+  <%= content_tag :div, class: "carousel slide carousel-default", id: "carousel_default", data: {ride: "carousel"} do %>
       <%= content_tag :ol, class: "carousel-indicators" do %>
         <li data-target="#carousel_default" data-slide-to="0" class="active"></li>
         <li data-target="#carousel_default" data-slide-to="1"></li>
@@ -407,7 +407,7 @@
   <h3>With thumbnail"</h3>
 	<div class="row">
 		<div class="col-xs-12">
-      <div id="carousel_thumbnail" class="carousel slide">
+      <div id="carousel_thumbnail" class="carousel slide carousel-thumbnail">
         <ol class="carousel-indicators">
             <li data-target="#carousel_thumbnail" data-slide-to="0" class="active"></li>
             <li data-target="#carousel_thumbnail" data-slide-to="1"></li>
@@ -496,7 +496,7 @@
 
   <h3>With Grid</h3>
   <div class="row">
-    <div id="carousel_grid">
+    <div id="carousel_grid" class="carousel-grid">
       <div class="col-sm-6" id="slider-thumbs">
           <!-- Bottom switcher of slider -->
         <ul class="list-unstyled">

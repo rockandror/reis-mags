@@ -1,34 +1,37 @@
-@mixin minicolors-mixin($color, $fontAwesome, $iconColor){
-  .minicolors{
-    .minicolors-swatch{
-      top:12px;
-      left:12px;
+@mixin minicolors-mixin($color, $font-awesome, $icon-color) {
+  .minicolors {
+
+    .minicolors-swatch {
+      top: 12px;
+      left: 12px;
     }
-    &:before{
-      @if $fontAwesome == true {
+
+    ::before {
+      @if $font-awesome == true {
         font-family: FontAwesome;
         font-style: normal;
       }
-      content:'';
+      content: '';
       display: inline-block;
       padding-right: 3px;
       vertical-align: middle;
       text-align: center;
       width: 15px;
       height: 15px;
-      color:$color;
-      right:15px;
-      top:18px;
+      color: $color;
+      right: 15px;
+      top: 18px;
       position: absolute;
       z-index: 1;
     }
-    @if $fontAwesome == true {
-      &:before{
-        content: $iconColor;
+
+    @if $font-awesome == true {
+      ::before {
+        content: $icon-color;
       }
-    }@else{
-      &:before{
-        content:'';
+    } @else {
+      ::before {
+        content: '';
         background: url("data:image/svg+xml;utf8,
                           <svg xmlns='http://www.w3.org/2000/svg'
                           width='25'

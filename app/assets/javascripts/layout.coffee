@@ -10,11 +10,12 @@ hideLoadingOverlay = () ->
 jQuery ->
   console.log('Running')
   fastClick()
+  initialize_modules()
   detectOrientationChange()
   touchOutIpad()
   check_box_custom()
   radio_button_custom()
-  slider_bootstrap()
+  #slider_bootstrap()
   magnific_popup()
   tooltips()
   popover()

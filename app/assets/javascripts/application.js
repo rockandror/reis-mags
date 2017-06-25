@@ -24,6 +24,7 @@
 //= require nprogress-config
 //= require nprogress-turbolinks
 //= require nprogress-ajax
+//= require app
 //= require bootstrap-datepicker/core
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.es.js
 //= require bootstrap-timepicker
@@ -48,3 +49,8 @@
 //= require carousel
 //= require cookies_eu
 //= require nprogress-config
+
+var initialize_modules = function() {
+  console.log("initialize_modules");
+  App.SliderBootstrap.initialize();
+}

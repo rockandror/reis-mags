@@ -1,10 +1,10 @@
 @import 'bootstrap_and_overrides';
 
 body {
+  // //Nprogress : Color and height bar
+  @include n-progress-mixin($brand-primary, 5px);
   //Flag - vertical horizontal - width - height
   @include flags-mixin('horizontal', 30px, 30px);
-  // //Nprogress
-  @include n-progress-mixin($brand-primary);
   // //Cookie consent
   @include cookies-eu-custom-style-mixin(fixed, $brand-primary);
   // // Data picker

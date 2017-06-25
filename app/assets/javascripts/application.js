@@ -25,6 +25,10 @@
 //= require nprogress-turbolinks
 //= require nprogress-ajax
 //= require app
+//= require touch_device
+//= require fastclick
+//= require touch_ipad
+//= require orientation_change
 //= require bootstrap-datepicker/core
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.es.js
 //= require bootstrap-timepicker
@@ -37,7 +41,7 @@
 //= require selectpicker
 //= require datapicker
 //= require timepicker
-//= require colorpicker
+//= require mini_colors
 //= require device
 //= require checkbox
 //= require radiobutton
@@ -52,5 +56,20 @@
 
 var initialize_modules = function() {
   console.log("initialize_modules");
+  //App.NprogressCustom.initialize();
+  App.TouchDevice.initialize();
+  App.FastClick.initialize();
+  App.OrientationChange.initialize();
+  //App.TouchIpad.initialize();
   App.SliderBootstrap.initialize();
+  App.magnificPopup.initialize();
+  App.PopOver.initialize();
+  App.RadioButton.initialize();
+  App.CheckBox.initialize();
+  App.SelectPicker.initialize();
+  App.TimePicker.initialize();
+  App.ToolTips.initialize();
+  App.DataPicker.initialize();
+  App.MiniColors.initialize();
+  App.Carousel.initialize();
 }

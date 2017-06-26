@@ -10,6 +10,6 @@ hideLoadingOverlay = () ->
 jQuery ->
   console.log('Running')
   initialize_modules()
-  
+
 $(document).on('page:fetch', showLoadingOverlay)
 $(document).on('page:change', hideLoadingOverlay)

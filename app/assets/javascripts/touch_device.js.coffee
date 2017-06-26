@@ -6,9 +6,8 @@ App.TouchDevice =
     if touchDevise == true
       console.log 'Touch Device'
       App.TouchDevice.fast_click()
+      App.TouchDevice.doOnOrientationChange();
       App.TouchDevice.touch_ipad()
-
-    return touchDevise
 
   fast_click: ->
     console.log 'fastClick'
@@ -17,6 +16,24 @@ App.TouchDevice =
         FastClick.attach document.body
         return
       ), false
+
+  doOnOrientationChange: ->
+    console.log 'Do orientation change'
+    isMobile = window.matchMedia('only screen and (max-width: 767px)')
+    #alert(isMobile.matches)
+    if isMobile.matches
+      console.log 'max 767 orientation change'
+      if window.matchMedia('(orientation: landscape)').matches
+        console.log 'Landscape < 767'
+        $('.block-landscape').removeClass 'hidden'
+      else
+        console.log 'Portrait < 767'
+        $('.block-landscape').addClass 'hidden'
+
+    window.addEventListener 'orientationchange', (->
+      App.TouchDevice.doOnOrientationChange();
+      return
+    ), false
 
   touch_ipad: ->
     console.log 'touchOutIpad'

@@ -26,7 +26,6 @@
 //= require app
 //= require nprogress_config
 //= require touch_device
-//= require orientation_change
 //= require bootstrap-datepicker/core
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.es.js
 //= require bootstrap-timepicker
@@ -40,7 +39,6 @@
 //= require datapicker
 //= require timepicker
 //= require mini_colors
-//= require device
 //= require checkbox
 //= require radiobutton
 //= require bootstrap_slider
@@ -53,11 +51,9 @@
 
 
 var initialize_modules = function() {
-
   console.log("initialize_modules");
   App.Progress.initialize();
   App.TouchDevice.initialize();
-  App.OrientationChange.initialize();
   App.SliderBootstrap.initialize();
   App.magnificPopup.initialize();
   App.PopOver.initialize();

@@ -21,13 +21,11 @@
 //= require analytics
 //= require bootstrap-sprockets
 //= require nprogress
-//= require nprogress-config
 //= require nprogress-turbolinks
 //= require nprogress-ajax
 //= require app
+//= require nprogress_config
 //= require touch_device
-//= require fastclick
-//= require touch_ipad
 //= require orientation_change
 //= require bootstrap-datepicker/core
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.es.js
@@ -52,14 +50,15 @@
 //= require popover
 //= require carousel
 //= require cookies_eu
-//= require nprogress-config
+
 
 var initialize_modules = function() {
+
   console.log("initialize_modules");
-  //App.NprogressCustom.initialize();
+  App.Progress.initialize();
   App.TouchDevice.initialize();
-  App.FastClick.initialize();
-  App.OrientationChange.initialize();
+  //App.FastClick.initialize();
+  //App.OrientationChange.initialize();
   //App.TouchIpad.initialize();
   App.SliderBootstrap.initialize();
   App.magnificPopup.initialize();

@@ -20,7 +20,7 @@ App.TouchDevice =
   doOnOrientationChange: ->
     console.log 'Do orientation change'
     isMobile = window.matchMedia('only screen and (max-width: 767px)')
-    #alert(isMobile.matches)
+    
     if isMobile.matches
       console.log 'max 767 orientation change'
       if window.matchMedia('(orientation: landscape)').matches

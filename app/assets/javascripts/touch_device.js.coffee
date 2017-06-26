@@ -1,18 +1,21 @@
 App.TouchDevice =
 
   is_touch_device: ->
-    console.log 'is_touch_device'
-    'ontouchstart' of window or navigator.MaxTouchPoints > 0 or navigator.msMaxTouchPoints > 0
+    touchDevise = 'ontouchstart' of window or navigator.MaxTouchPoints > 0 or navigator.msMaxTouchPoints > 0
+
+    if touchDevise == true
+      console.log 'Touch Device'
+      App.TouchDevice.fast_click()
+
+    return touchDevise
 
   fast_click: ->
     console.log 'fastClick'
-    if is_touch_device()
-      if 'addEventListener' of document
-        document.addEventListener 'DOMContentLoaded', (->
-          FastClick.attach document.body
-          return
-        ), false
-    return
+    if 'addEventListener' of document
+      document.addEventListener 'DOMContentLoaded', (->
+        FastClick.attach document.body
+        return
+      ), false
 
     touch_ipad: ->
       console.log 'touchOutIpad'
@@ -35,6 +38,6 @@ App.TouchDevice =
 
   initialize: ->
     App.TouchDevice.is_touch_device()
-    App.TouchDevice.fast_click()
-    App.TouchDevice.touch_ipad()
+    #App.TouchDevice.fast_click()
+    #App.TouchDevice.touch_ipad()
     false

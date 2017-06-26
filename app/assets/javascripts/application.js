@@ -57,9 +57,7 @@ var initialize_modules = function() {
   console.log("initialize_modules");
   App.Progress.initialize();
   App.TouchDevice.initialize();
-  //App.FastClick.initialize();
-  //App.OrientationChange.initialize();
-  //App.TouchIpad.initialize();
+  App.OrientationChange.initialize();
   App.SliderBootstrap.initialize();
   App.magnificPopup.initialize();
   App.PopOver.initialize();

@@ -1,0 +1,19 @@
+@function set-footer-dynamic-color($color) {
+  @if (lightness($color) > 50) {
+    @return $gray-base;
+  } @else {
+    @return $gray-lighter;
+  }
+}
+
+
+@mixin footer-mixin($background, $padding) {
+
+  footer {
+    background: $background;
+    padding: $padding;
+    background: $background;
+    color: set-footer-dynamic-color($background);
+  }
+
+}

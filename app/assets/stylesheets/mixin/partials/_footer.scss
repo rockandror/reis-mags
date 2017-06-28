@@ -1,4 +1,4 @@
-@function set-footer-dynamic-color($color) {
+@function set-footer-contrast-color($color) {
   @if (lightness($color) > 50) {
     @return $gray-base;
   } @else {
@@ -13,7 +13,7 @@
     background: $background;
     padding: $padding;
     background: $background;
-    color: set-footer-dynamic-color($background);
+    color: set-footer-contrast-color($background);
   }
 
 }

@@ -1,4 +1,4 @@
-App.Progress =
+App.Nprogress =
 
   initialize: ->
     console.log 'nprogress'

@@ -52,7 +52,7 @@
 
 var initialize_modules = function() {
   console.log("initialize_modules");
-  App.Progress.initialize();
+  App.Nprogress.initialize();
   App.TouchDevice.initialize();
   App.SliderBootstrap.initialize();
   App.magnificPopup.initialize();

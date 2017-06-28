@@ -1,6 +1,6 @@
 @mixin go-to-top-mixin($alignament, $background, $width, $height){
   .scroll-top {
-    display:none;
+    display: none;
     position: fixed;
     line-height: 0;
     background: $background;

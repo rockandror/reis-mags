@@ -56,4 +56,3 @@ App.TouchDevice =
 
   initialize: ->
     App.TouchDevice.is_touch_device()
-    false

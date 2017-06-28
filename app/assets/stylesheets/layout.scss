@@ -3,6 +3,8 @@
 @import "bootstrap_and_overrides";
 
 body {
+  //Nabvbar
+  @include bootstrap-navbar-mixin(#fff, #f2f2f2);
   //Flag - vertical horizontal - width - height
   @include flags-mixin('horizontal', 30px, 30px);
   //Nprogress

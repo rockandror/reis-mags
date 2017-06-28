@@ -47,12 +47,15 @@
 //= require tooltips
 //= require popover
 //= require carousel
+//= require scroll_navbar
+//= require nprogress_config
 //= require cookies_eu
 
 
 var initialize_modules = function() {
   console.log("initialize_modules");
   App.Nprogress.initialize();
+  App.ScrollNavbar.initialize();
   App.TouchDevice.initialize();
   App.SliderBootstrap.initialize();
   App.magnificPopup.initialize();

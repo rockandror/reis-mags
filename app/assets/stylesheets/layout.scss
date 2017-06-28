@@ -3,16 +3,18 @@
 body {
   // //Nprogress : Color and height bar
   @include n-progress-mixin($brand-primary, 5px);
+  //Nabvbar
+  @include bootstrap-navbar-mixin(#fff, #f2f2f2);
   //Flag - vertical horizontal - width - height
   @include flags-mixin('horizontal', 30px, 30px);
   // //Cookie consent
   @include cookies-eu-custom-style-mixin(fixed, $brand-primary);
   // // Data picker
-  @include datapicker-custom-style-mixin(500px, false, #fff);
+  @include datepicker-custom-style-mixin(500px, false, #fff);
   // //Time picker Icons
   @include bootstrap-timepicker-widget-mixin($brand-primary);
   // // Data picker and Time picker Icons
-  @include datapicker-timepicker-input-icon-mixin($brand-primary, true, '\f073', '\f017');
+  @include datepicker-timepicker-input-icon-mixin($brand-primary, true, '\f073', '\f017');
   // //Bootstrao select
   @include bootstrap-select-mixin($brand-primary);
   // //Color picker

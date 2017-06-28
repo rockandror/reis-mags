@@ -6,6 +6,8 @@ hideLoadingOverlay = () ->
   console.log('Hide Loading overlay')
   $('.overlay-nprogress').hide()
 
+$(window).resize ->
+  scroll_navbar()
 
 jQuery ->
   console.log('Running')
@@ -20,6 +22,7 @@ jQuery ->
   popover()
   carousel()
   toggle_bootstrap()
+  scroll_navbar()
 
 $(document).on('page:fetch', showLoadingOverlay)
 $(document).on('page:change', hideLoadingOverlay)

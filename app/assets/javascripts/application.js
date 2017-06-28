@@ -47,4 +47,5 @@
 //= require popover
 //= require carousel
 //= require cookies_eu
+//= require scroll_navbar
 //= require nprogress-config

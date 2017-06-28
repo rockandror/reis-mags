@@ -1,5 +1,6 @@
 @mixin go-to-top-mixin($alignament, $background, $width, $height){
-  #scroll-top {
+  .scroll-top {
+    display:none;
     position: fixed;
     line-height: 0;
     background: $background;
@@ -7,7 +8,7 @@
     height: $height;
     width: $width;
     bottom: 15px;
-    
+
     @include breakpoint(xs) {
       height: $height / 1.5;
       width: $width / 1.5;

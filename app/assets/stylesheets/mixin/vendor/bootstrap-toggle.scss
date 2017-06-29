@@ -1,22 +1,24 @@
-@mixin bootstrap-toggle-mixin(){
+@mixin bootstrap-toggle-mixin() {
 
   //Animation
   .slow .toggle-group {
     transition: left 0.7s;
   }
+
   .fast .toggle-group {
     transition: left 0.1s;
   }
+
   .quick .toggle-group {
     transition: none;
   }
 
-  //IOS style
   .toggle.ios,
   .toggle-on.ios,
-  .toggle-off.ios{
+  .toggle-off.ios {
     border-radius: 20px;
   }
+
   .toggle.ios .toggle-handle {
     border-radius: 20px;
   }

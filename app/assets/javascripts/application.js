@@ -31,6 +31,7 @@
 //= require bootstrap-timepicker
 //= require bootstrap-select
 //= require bootstrap-slider
+//= require bootstrap-toggle
 //= require jquery.minicolors
 //= require magnific-popup
 //= require layout
@@ -41,7 +42,6 @@
 //= require checkbox
 //= require radiobutton
 //= require bootstrap_slider
-//= require bootstrap_toggle
 //= require magnific_popup
 //= require tooltips
 //= require popover

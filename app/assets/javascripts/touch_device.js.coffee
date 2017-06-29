@@ -1,9 +1,9 @@
 App.TouchDevice =
 
   is_touch_device: ->
-    touchDevise = 'ontouchstart' of window or navigator.MaxTouchPoints > 0 or navigator.msMaxTouchPoints > 0
+    touchDevice = 'ontouchstart' of window or navigator.MaxTouchPoints > 0 or navigator.msMaxTouchPoints > 0
 
-    if touchDevise == true
+    if touchDevice == true
       console.log 'Touch Device'
       App.TouchDevice.fast_click()
       App.TouchDevice.doOnOrientationChange();

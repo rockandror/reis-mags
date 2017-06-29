@@ -1,0 +1,7 @@
+@mixin bootstrap-timepicker-widget-mixin($arrow-color) {
+  .bootstrap-timepicker-widget {
+    table td a {
+      color: $arrow-color;
+    }
+  }
+}

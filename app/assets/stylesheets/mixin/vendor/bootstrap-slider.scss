@@ -1,0 +1,25 @@
+@mixin slider-custom-style-mixin($slider-color, $slider-track, $track-high, $track-low, $btn-color) {
+  .slider-custom {
+    .slider-handle {
+      background: $btn-color;
+    }
+
+    .slider-selection {
+      background: $slider-color;
+    }
+
+    .slider-track {
+      background: $slider-track;
+    }
+
+    .colors3 {
+      .slider-track-high {
+        background: $track-high;
+      }
+
+      .slider-track-low {
+        background: $track-low;
+      }
+    }
+  }
+}

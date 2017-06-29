@@ -1,32 +1,33 @@
-@mixin checkbox-custom-mixin(){
+@mixin checkbox-custom-mixin() {
   .checkbox-custom {
     user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
     list-style: none;
     display: inline-block;
     position: relative;
-    label{
+
+    label {
       cursor: pointer;
       font-weight: normal;
-      color:$brand-primary;
-      .checkbox{
+      color: $brand-primary;
+
+      .checkbox {
         float: left;
         padding-top: 0;
         font-size: 11px;
         margin-right: 5px;
       }
     }
+
     input {
       display: none;
       display: inline\9;
     }
+
     .icon {
       border: 1px solid;
       border-color: $brand-primary;
-      border-radius: .3em;
-      font-size: .9em;
+      border-radius: 0.3em;
+      font-size: 0.9em;
       color: #fff;
       height: 7px;
       width: 7px;
@@ -34,17 +35,19 @@
       position: absolute;
       margin-right: 8px;
       display: inline-block;
-      top:2px;
-      left:0;
+      top: 2px;
+      left: 0;
+
       .fa {
         position: absolute;
-        left:1px;
-        top:1px;
+        left: 1px;
+        top: 1px;
         visibility: hidden;
-        color:$brand-primary;
+        color: $brand-primary;
       }
     }
-    span{
+
+    span {
       padding-left: 11px;
     }
   }

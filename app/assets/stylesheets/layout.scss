@@ -42,6 +42,9 @@ body {
   //Scroll top - Align BR bottom right, background color, width height icon
   @include go-to-top-mixin('BR', #fff,  60px, 60px);
 
+  //Footer : Background color \ Padding ( The color of the text changes dynamically based on the background color )
+  @include footer-mixin($gray-base, 3em 0em);
+
   //Override bootstrap - move
   a:focus, .btn:focus{
     outline:0;
@@ -53,10 +56,15 @@ body {
   }
 }
 
-body{
+body {
   color:#333;
-  background: white;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
-footer{
-  background: #acacac;
+
+.page-wrap {
+  flex: 1;
 }

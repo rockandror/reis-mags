@@ -1,4 +1,4 @@
-App.DataPicker =
+App.DatePicker =
 
   initialize: ->
     $('.datepicker').datepicker

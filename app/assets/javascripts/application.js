@@ -36,7 +36,7 @@
 //= require magnific-popup
 //= require layout
 //= require selectpicker
-//= require datapicker
+//= require datepicker
 //= require timepicker
 //= require mini_colors
 //= require checkbox
@@ -47,23 +47,23 @@
 //= require popover
 //= require carousel
 //= require scroll_top
+//= require scroll_navbar
 //= require cookies_eu
 
 var initialize_modules = function() {
   console.log("initialize_modules");
   App.Nprogress.initialize();
   App.ScrollNavbar.initialize();
-  App.ScrollNavbar.initialize();
   App.TouchDevice.initialize();
   App.SliderBootstrap.initialize();
-  App.magnificPopup.initialize();
+  App.MagnificPopup.initialize();
   App.PopOver.initialize();
   App.RadioButton.initialize();
   App.CheckBox.initialize();
   App.SelectPicker.initialize();
   App.TimePicker.initialize();
   App.ToolTips.initialize();
-  App.DataPicker.initialize();
+  App.DatePicker.initialize();
   App.MiniColors.initialize();
   App.Carousel.initialize();
 }

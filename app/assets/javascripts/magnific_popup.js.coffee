@@ -1,4 +1,4 @@
-App.magnificPopup =
+App.MagnificPopup =
 
   initialize: ->
     console.log'magnific_popup';

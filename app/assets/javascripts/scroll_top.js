@@ -2,22 +2,22 @@ function scroll_top() {
 
   console.log("Scroll top");
 
-  var action;
+  var setTimeOut;
   var btnScrollTop = $('.scroll-top');
 
   $(window).scroll(function() {
-    clearTimeout(action);
+    clearTimeout(setTimeOut);
     scrollDown();
   });
 
   function scrollDown() {
-    action = setTimeout(function() {
+    setTimeOut = setTimeout(function() {
       if ( $(this).scrollTop() > 100 ) {
         btnScrollTop.fadeIn();
       } else {
         btnScrollTop.fadeOut();
       }
-    }, 1);
+    }, 0.5);
   }
 
   btnScrollTop.each(function(){

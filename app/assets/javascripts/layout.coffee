@@ -21,6 +21,7 @@ jQuery ->
   tooltips()
   popover()
   carousel()
+  scroll_top()
   toggle_bootstrap()
   scroll_navbar()
 

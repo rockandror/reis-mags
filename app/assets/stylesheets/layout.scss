@@ -37,6 +37,8 @@ body {
   @include carousel-grid-mixin($brand-primary);
   // //Bootstrap toggle
   @include bootstrap-toggle-mixin();
+  //Scroll top - Align BR bottom right, background color, width height icon
+  @include go-to-top-mixin('BR', #fff,  60px, 60px);
 
   //Footer : Background color \ Padding ( The color of the text changes dynamically based on the background color )
   @include footer-mixin($gray-base, 3em 0em);

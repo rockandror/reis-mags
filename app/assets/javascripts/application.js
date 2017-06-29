@@ -46,6 +46,11 @@
 //= require tooltips
 //= require popover
 //= require carousel
+<<<<<<< HEAD
+=======
+//= require scroll_top
+//= require cookies_eu
+>>>>>>> d54ca0ce492f267ddc24df0ae4e020339416146c
 //= require scroll_navbar
 //= require nprogress_config
 //= require cookies_eu

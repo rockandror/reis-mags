@@ -1,0 +1,35 @@
+@mixin go-to-top-mixin($alignament, $background, $width, $height){
+  .scroll-top {
+    display: none;
+    position: fixed;
+    line-height: 0;
+    background: $background;
+    border-radius: 50%;
+    height: $height;
+    width: $width;
+    bottom: 15px;
+
+    @include breakpoint(xs) {
+      height: $height / 1.5;
+      width: $width / 1.5;
+    }
+    svg{
+      position: absolute;
+      height: $height;
+      width: $width;
+      left: 6%;
+      top: 9%;
+
+      @include breakpoint(xs) {
+        height: $height / 1.5;
+        width: $width / 1.5;
+      }
+    }
+
+    @if ($alignament == 'BR'){
+      right: 15px;
+    }@else{
+      left: 0;
+    }
+  }
+}

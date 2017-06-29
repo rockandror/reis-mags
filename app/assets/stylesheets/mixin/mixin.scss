@@ -1,5 +1,6 @@
 //Partial
 @import 'partials/flags';
+@import "partials/_breakpoint";
 @import 'partials/nprogress';
 @import 'partials/cookies-eu-consent';
 @import 'partials/block-landscape';
@@ -8,6 +9,7 @@
 @import 'partials/icon-svg';
 @import 'partials/buttons';
 @import 'partials/carousel';
+@import 'partials/_scroll_top';
 @import 'partials/footer';
 //Vendor
 @import 'vendor/datepicker';

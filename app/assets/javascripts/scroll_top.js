@@ -3,9 +3,7 @@ function scroll_top() {
   console.log("Scroll top");
   var btnScrollTop = $('.scroll-top');
 
-  $(window).scroll(function() {
-    scrollDown();
-  });
+  $(window).scroll(scrollDown) ;
 
   function scrollDown() {
     setTimeout(function() {

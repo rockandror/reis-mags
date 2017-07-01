@@ -1,15 +1,21 @@
-@import "partials/_flags";
-@import "partials/_nprogress";
-@import "partials/_cookies_eu_consent";
-@import "partials/_block_landscape";
-@import "partials/_checkbox";
-@import "partials/_radiobutton";
-@import "partials/_icon_svg";
-@import "partials/_buttons";
-@import "partials/_carousel";
-@import "vendor/_datapicker";
-@import "vendor/_timepicker";
-@import "vendor/_minicolors";
-@import "vendor/_bootstrap_select";
-@import "vendor/_bootstrap_slider";
-@import "vendor/_bootstrap_toggle";
+//Partial
+@import 'partials/flags';
+@import "partials/_breakpoint";
+@import 'partials/nprogress';
+@import 'partials/cookies-eu-consent';
+@import 'partials/block-landscape';
+@import 'partials/checkbox';
+@import 'partials/radiobutton';
+@import 'partials/icon-svg';
+@import 'partials/buttons';
+@import 'partials/carousel';
+@import 'partials/_scroll_top';
+@import 'partials/footer';
+//Vendor
+@import 'vendor/datepicker';
+@import 'vendor/timepicker';
+@import 'vendor/minicolors';
+@import 'vendor/bootstrap-select';
+@import 'vendor/bootstrap-slider';
+@import 'vendor/bootstrap-toggle';
+@import "vendor/bootstrap_navbar";

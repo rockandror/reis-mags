@@ -1,4 +1,4 @@
-<%= content_tag :div, class: "container" do %>
+<%= content_tag :div, class: "container page" do %>
   <h1><%= t "components.title" %></h1>
   <p class="lead"><%= t "components.description" %></p>
   <!-- Toggle -->
@@ -10,51 +10,51 @@
       <%= bootstrap_form_tag url: "#", method: :get, class:"container" do |f|%>
         <%= content_tag :div, class:"col-xs-2" do %>
         <strong>Checked</strong>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'large'}, checked: true %>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'normal'}, checked: true %>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'small'}, checked: true %>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'mini'}, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'large' }, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'normal' }, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'small' }, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'mini' }, checked: true %>
         <% end %>
         <%= content_tag :div, class:"col-xs-2" do %>
         <strong>Disabled</strong>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'large'}, disabled: true %>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'normal'}, disabled: true %>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'small'}, disabled: true %>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'mini'}, disabled: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'large' }, disabled: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'normal' }, disabled: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'small' }, disabled: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'mini' }, disabled: true %>
         <% end %>
         <%= content_tag :div, class:"col-xs-2" do %>
           <strong>Class color</strong>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'large', onstyle: 'primary'}, checked: true %>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'normal', onstyle: 'secondary'}, checked: true %>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'normal', onstyle: 'success'}, checked: true %>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'small', onstyle: 'info'}, checked: true %>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'mini', onstyle: 'warning'}, checked: true %>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'mini', onstyle: 'danger'}, checked: true %>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'mini', onstyle: 'default'}, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'large', onstyle: 'primary' }, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'normal', onstyle: 'secondary' }, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'normal', onstyle: 'success' }, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'small', onstyle: 'info' }, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'mini', onstyle: 'warning' }, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'mini', onstyle: 'danger' }, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'mini', onstyle: 'default' }, checked: true %>
         <% end %>
         <%= content_tag :div, class:"col-xs-2" do %>
           <strong>Mix color</strong>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'large', onstyle: 'primary', offstyle: 'success'}, checked: true %>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'normal', onstyle: 'secondary', offstyle: 'primary'}, checked: true %>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'normal', onstyle: 'success', offstyle: 'danger'}, checked: true %>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'small', onstyle: 'info', offstyle: 'warning'}, checked: true %>
-          <%= f.check_box '', data: {toggle:'toggle', size: 'mini', onstyle: 'warning', offstyle: 'success'}, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'large', onstyle: 'primary', offstyle: 'success' }, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'normal', onstyle: 'secondary', offstyle: 'primary' }, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'normal', onstyle: 'success', offstyle: 'danger' }, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'small', onstyle: 'info', offstyle: 'warning' }, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', size: 'mini', onstyle: 'warning', offstyle: 'success' }, checked: true %>
         <% end %>
         <%= content_tag :div, class:"col-xs-2" do %>
           <strong>Custom text</strong>
-          <%= f.check_box '', data: {toggle:'toggle', on: 'ready', off: 'not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger'}, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', on: 'ready', off: 'not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger' }, checked: true %>
           <strong>With icon</strong>
-          <%= f.check_box '', data: {toggle:'toggle', on: '<i class="fa fa-play"></i> Play ready', off: '<i class="fa fa-pause"></i> not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger'}, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', on: '<i class="fa fa-play"></i> Play ready', off: '<i class="fa fa-pause"></i> not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger' }, checked: true %>
           <strong>IOS style</strong>
-          <%= f.check_box '', data: {toggle:'toggle', on: 'Play ready', off: 'not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger', style: "ios"}, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', on: 'Play ready', off: 'not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger', style: "ios" }, checked: true %>
         <% end %>
         <%= content_tag :div, class:"col-xs-2" do %>
           <strong>Slow animate</strong>
-          <%= f.check_box '', data: {toggle:'toggle', on: 'ready', off: 'not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger', style:'slow'}, checked: true %>
+          <%= f.check_box '', data: { toggle:'toggle', on: 'ready', off: 'not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger', style:'slow' }, checked: true %>
           <strong>Fast animate</strong>
-           <%= f.check_box '', data: {toggle:'toggle', on: 'ready', off: 'not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger', style:'fast'}, checked: true %>
+           <%= f.check_box '', data: { toggle:'toggle', on: 'ready', off: 'not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger', style:'fast' }, checked: true %>
           <strong>Quick animate</strong>
-           <%= f.check_box '', data: {toggle:'toggle', on: 'ready', off: 'not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger', style:'quick'}, checked: true %>
+           <%= f.check_box '', data: { toggle:'toggle', on: 'ready', off: 'not ready',  size: 'normal', onstyle: 'success', offstyle: 'danger', style:'quick' }, checked: true %>
         <% end %>
 
       <% end %>
@@ -70,73 +70,73 @@
     <h2>Flag</h2>
     <%= link_to '#',
                 class: 'btn-flag',
-                data: {toggle: 'tooltip', placement: 'top'},
+                data: { toggle: 'tooltip', placement: 'top' },
                 title: "Español" do %>
                 <div class="flag flag-es"> </div>
     <% end %>
     <%= link_to '#',
                 class: 'btn-flag',
-                data: {toggle: 'tooltip', placement: 'top'},
+                data: { toggle: 'tooltip', placement: 'top' },
                 title: "Aleman" do %>
                 <div class="flag flag-de"> </div>
     <% end %>
     <%= link_to '#',
                 class: 'btn-flag',
-                data: {toggle: 'tooltip', placement: 'top'},
+                data: { toggle: 'tooltip', placement: 'top' },
                 title: "English" do %>
                 <div class="flag flag-en"> </div>
     <% end %>
     <%= link_to '#',
                 class: 'btn-flag',
-                data: {toggle: 'tooltip', placement: 'top'},
+                data: { toggle: 'tooltip', placement: 'top' },
                 title: "United states" do %>
                 <div class="flag flag-us"> </div>
     <% end %>
     <%= link_to '#',
                 class: 'btn-flag',
-                data: {toggle: 'tooltip', placement: 'top'},
+                data: { toggle: 'tooltip', placement: 'top' },
                 title: "Россия" do %>
                 <div class="flag flag-ru"> </div>
     <% end %>
     <%= link_to '#',
                 class: 'btn-flag',
-                data: {toggle: 'tooltip', placement: 'top'},
+                data: { toggle: 'tooltip', placement: 'top' },
                 title: " 中国" do %>
                 <div class="flag flag-cn"> </div>
     <% end %>
     <%= link_to '#',
                 class: 'btn-flag',
-                data: {toggle: 'tooltip', placement: 'top'},
+                data: { toggle: 'tooltip', placement: 'top' },
                 title: " France" do %>
                 <div class="flag flag-fr"> </div>
     <% end %>
     <%= link_to '#',
                 class: 'btn-flag',
-                data: {toggle: 'tooltip', placement: 'top'},
+                data: { toggle: 'tooltip', placement: 'top' },
                 title: " Italy" do %>
                 <div class="flag flag-it"> </div>
     <% end %>
     <%= link_to '#',
                 class: 'btn-flag',
-                data: {toggle: 'tooltip', placement: 'top'},
+                data: { toggle: 'tooltip', placement: 'top' },
                 title: "Argentina" do %>
                 <div class="flag flag-ar"> </div>
     <% end %>
     <%= link_to '#',
                 class: 'btn-flag',
-                data: {toggle: 'tooltip', placement: 'top'},
+                data: { toggle: 'tooltip', placement: 'top' },
                 title: "Nederland" do %>
                 <div class="flag flag-nt"> </div>
     <% end %>
     <%= link_to '#',
                 class: 'btn-flag',
-                data: {toggle: 'tooltip', placement: 'top'},
+                data: { toggle: 'tooltip', placement: 'top' },
                 title: "Portugal" do %>
                 <div class="flag flag-pr"> </div>
     <% end %>
     <%= link_to '#',
                 class: 'btn-flag',
-                data: {toggle: 'tooltip', placement: 'top'},
+                data: { toggle: 'tooltip', placement: 'top' },
                 title: " România" do %>
                 <div class="flag flag-ro"> </div>
     <% end %>
@@ -201,16 +201,16 @@
   <div class="row">
     <h2>ToolTips</h2>
     <div class="col-xs-3">
-      <%= link_to 'Hover over me', '#', class: 'btn btn-primary', data: {toggle: 'tooltip', placement: 'top'}, title: "Yes Hover top" %>
+      <%= link_to 'Hover over me', '#', class: 'btn btn-primary', data: { toggle: 'tooltip', placement: 'top' }, title: "Yes Hover top" %>
     </div>
     <div class="col-xs-3">
-      <%= link_to 'Hover over me', '#', class: 'btn btn-primary', data: {toggle: 'tooltip', placement: 'left'}, title: "Yes Hover Left" %>
+      <%= link_to 'Hover over me', '#', class: 'btn btn-primary', data: { toggle: 'tooltip', placement: 'left' }, title: "Yes Hover Left" %>
     </div>
     <div class="col-xs-3">
-      <%= link_to 'Hover over me', '#', class: 'btn btn-primary', data: {toggle: 'tooltip', placement: 'right'}, title: "Yes Hover Right" %>
+      <%= link_to 'Hover over me', '#', class: 'btn btn-primary', data: { toggle: 'tooltip', placement: 'right' }, title: "Yes Hover Right" %>
     </div>
     <div class="col-xs-3">
-      <%= link_to 'Hover over me', '#', class: 'btn btn-primary', data: {toggle: 'tooltip', placement: 'bottom'}, title: "Yes Hover Bottom" %>
+      <%= link_to 'Hover over me', '#', class: 'btn btn-primary', data: { toggle: 'tooltip', placement: 'bottom' }, title: "Yes Hover Bottom" %>
     </div>
   </div>
   <hr>
@@ -218,14 +218,14 @@
   <div class="row">
     <h2>Modal</h2>
     <div class="col-xs-12">
-      <%= link_to 'Open Modal', '#myModal', class: 'btn btn-primary', data: {toggle: 'modal', target: '#myModal'} %>
+      <%= link_to 'Open Modal', '#myModal', class: 'btn btn-primary', data: { toggle: 'modal', target: '#myModal' } %>
     </div>
 
     <%= content_tag :div, class: "modal fade", id: 'myModal', role: 'dialog' do %>
       <%= content_tag :div, class: "modal-dialog" do %>
         <%= content_tag :div, class: "modal-content" do %>
           <%= content_tag :div, class: "modal-header" do %>
-            <%= link_to '#myModal', class: 'close', data: {dismiss: 'modal'} do %>
+            <%= link_to '#myModal', class: 'close', data: { dismiss: 'modal' } do %>
               &times;
             <% end %>
             <h4 class="modal-title">Modal Header</h4>
@@ -234,7 +234,7 @@
             <p>Some text in the modal.</p>
           <% end %>
           <%= content_tag :div, class: "modal-footer" do %>
-            <%= link_to 'Close', '#myModal', class: 'btn btn-primary', data: {dismiss: 'modal'} %>
+            <%= link_to 'Close', '#myModal', class: 'btn btn-primary', data: { dismiss: 'modal' } %>
           <% end %>
         <% end %>
       <% end %>
@@ -246,7 +246,7 @@
   <div class="row">
     <h2>Collapse</h2>
     <h4>Simple Collapse</h4>
-    <%= link_to 'Simple collapsible', '#demo', class: 'btn btn-primary', data: {toggle:"collapse"} %>
+    <%= link_to 'Simple collapsible', '#demo', class: 'btn btn-primary', data: { toggle:"collapse" } %>
       <%= content_tag :div, class: "collapse", id: 'demo' do %>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -258,7 +258,7 @@
         <%= content_tag :div, class: "panel panel-primary" do %>
           <div class="panel-heading">
             <h4 class="panel-title">
-              <%= link_to '1. Suspender', '#collapseOne', data: {toggle: 'collapse', parent: '#accordion'} %>
+              <%= link_to '1. Suspender', '#collapseOne', data: { toggle: 'collapse', parent: '#accordion' } %>
             </h4>
           </div>
           <div id="collapseOne" class="panel-collapse collapse in">
@@ -270,7 +270,7 @@
         <%= content_tag :div, class: "panel panel-primary" do %>
           <div class="panel-heading">
             <h4 class="panel-title">
-              <%= link_to '2. Accordion', '#collapseTwo', data: {toggle: 'collapse', parent: '#accordion'} %>
+              <%= link_to '2. Accordion', '#collapseTwo', data: { toggle: 'collapse', parent: '#accordion' } %>
             </h4>
           </div>
           <div id="collapseTwo" class="panel-collapse collapse">
@@ -282,7 +282,7 @@
         <%= content_tag :div, class: "panel panel-primary" do %>
           <div class="panel-heading">
             <h4 class="panel-title">
-              <%= link_to '3. Rockandror', '#collapseThree', data: {toggle: 'collapse', parent: '#accordion'} %>
+              <%= link_to '3. Rockandror', '#collapseThree', data: { toggle: 'collapse', parent: '#accordion' } %>
             </h4>
           </div>
           <div id="collapseThree" class="panel-collapse collapse">
@@ -365,7 +365,7 @@
  <hr>
  <!-- Carousel -->
   <h2>Carousel</h2>
-  <%= content_tag :div, class: "carousel slide", id: "carousel_default", data: {ride: "carousel"} do %>
+  <%= content_tag :div, class: "carousel slide carousel-default", id: "carousel_default", data: { ride: "carousel" } do %>
       <%= content_tag :ol, class: "carousel-indicators" do %>
         <li data-target="#carousel_default" data-slide-to="0" class="active"></li>
         <li data-target="#carousel_default" data-slide-to="1"></li>
@@ -407,7 +407,7 @@
   <h3>With thumbnail"</h3>
 	<div class="row">
 		<div class="col-xs-12">
-      <div id="carousel_thumbnail" class="carousel slide">
+      <div id="carousel_thumbnail" class="carousel slide carousel-thumbnail">
         <ol class="carousel-indicators">
             <li data-target="#carousel_thumbnail" data-slide-to="0" class="active"></li>
             <li data-target="#carousel_thumbnail" data-slide-to="1"></li>
@@ -496,7 +496,7 @@
 
   <h3>With Grid</h3>
   <div class="row">
-    <div id="carousel_grid">
+    <div id="carousel_grid" class="carousel-grid">
       <div class="col-sm-6" id="slider-thumbs">
           <!-- Bottom switcher of slider -->
         <ul class="list-unstyled">
@@ -873,10 +873,10 @@
     <% end %>
   <% end %>
 
-  <%= content_tag :nav, aria: {label: "Page navigation"} do %>
+  <%= content_tag :nav, aria: { label: "Page navigation" } do %>
     <%= content_tag :ul, class:"pagination pagination-lg text-center" do %>
       <%= content_tag :li do %>
-        <%= link_to 'Action', aria: {label: "Previous"} do %>
+        <%= link_to 'Action', aria: { label: "Previous" } do %>
           <span aria-hidden="true">&laquo;</span>
         <% end %>
       <% end %>
@@ -896,7 +896,7 @@
         <%= link_to '5'%>
       <% end %>
       <%= content_tag :li, class: "disabled" do %>
-        <%= link_to 'Action', aria: {label: "Next"} do %>
+        <%= link_to 'Action', aria: { label: "Next" } do %>
           <span aria-hidden="true">&raquo;</span>
         <% end %>
       <% end %>
@@ -916,11 +916,11 @@
   <h2>Dropdown</h2>
   <%= bootstrap_form_tag url: "#", method: :get, class:"container" do |f|%>
     <%= content_tag :div, class:"dropdown" do %>
-      <%= f.button :submit, class: "btn btn-primary dropdown-toggle", id: "dropdownMenu1", data: {toggle:"dropdown"} , aria: {haspopup: "true", expanded: "true" } do %>
+      <%= f.button :submit, class: "btn btn-primary dropdown-toggle", id: "dropdownMenu1", data: { toggle:"dropdown" } , aria: { haspopup: "true", expanded: "true" } do %>
         Dropdown
         <span class="caret"></span>
       <% end %>
-      <%= content_tag :ul, class:"dropdown-menu", aria: {labelledby: "dropdownMenu1"} do %>
+      <%= content_tag :ul, class:"dropdown-menu", aria: { labelledby: "dropdownMenu1" } do %>
         <%= content_tag :li do %>
           <%= link_to 'Action' %>
         <% end %>
@@ -1133,6 +1133,7 @@
     <hr>
     <h2>Icons svg</h2>
     <%= custom_icon('close-icon', 'icon') %>
+    <%= custom_icon('scroll-top-icon', 'icon') %>
     <hr>
 
     <h2>Comments</h2>

@@ -1,0 +1,37 @@
+$list: es en us de ru cn fr it ar nt pr ro;
+//Vertical or Horizontal
+@mixin flags-mixin($alignament, $width, $height) {
+  .btn-flag {
+    padding: 5px;
+    width: $width;
+    height: $height;
+    position: relative;
+    margin: 5px;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    @if ($alignament == 'horizontal') {
+      display: block;
+      float: left;
+    } @else {
+      display: block;
+    }
+  }
+
+  .flag {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    @each $flag in $list {
+      &.flag-#{$flag} {
+        background: asset-url("flags/#{$flag}.png") no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}

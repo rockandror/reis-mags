@@ -21,9 +21,11 @@
 //= require analytics
 //= require bootstrap-sprockets
 //= require nprogress
-//= require nprogress-config
 //= require nprogress-turbolinks
 //= require nprogress-ajax
+//= require app
+//= require nprogress_config
+//= require touch_device
 //= require bootstrap-datepicker/core
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.es.js
 //= require bootstrap-timepicker
@@ -34,17 +36,34 @@
 //= require magnific-popup
 //= require layout
 //= require selectpicker
-//= require datapicker
+//= require datepicker
 //= require timepicker
-//= require colorpicker
-//= require device
+//= require mini_colors
 //= require checkbox
 //= require radiobutton
 //= require bootstrap_slider
-//= require bootstrap_toggle
 //= require magnific_popup
 //= require tooltips
 //= require popover
 //= require carousel
+//= require scroll_top
+//= require scroll_navbar
 //= require cookies_eu
-//= require nprogress-config
+
+var initialize_modules = function() {
+  console.log("initialize_modules");
+  App.Nprogress.initialize();
+  App.ScrollNavbar.initialize();
+  App.TouchDevice.initialize();
+  App.SliderBootstrap.initialize();
+  App.MagnificPopup.initialize();
+  App.PopOver.initialize();
+  App.RadioButton.initialize();
+  App.CheckBox.initialize();
+  App.SelectPicker.initialize();
+  App.TimePicker.initialize();
+  App.ToolTips.initialize();
+  App.DatePicker.initialize();
+  App.MiniColors.initialize();
+  App.Carousel.initialize();
+}

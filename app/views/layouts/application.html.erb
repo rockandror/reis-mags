@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= favicon_link_tag 'favicon.ico' %>
+  <%= render 'shared/favicon' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -15,9 +15,14 @@
     <%= render 'shared/block_landscape' %>
   <% end %>
   <div class="overlay-nprogress"></div>
-  <%= render '/shared/nav' %>
-  <%= render '/shared/notice' %>
-  <%= yield %>
+
+  <div class="page-wrap">
+    <%= render '/shared/nav' %>
+    <%= render '/shared/notice' %>
+    <%= yield %>
+    <%= render '/shared/scroll_top' %>
+  </div>
+
   <%= render '/shared/footer' %>
   <%= render 'cookies_eu/consent_banner', link: cookies_policy_path, target: :blank %>
   <!-- <% unless @font_awesome %> //de momento lo he comentado porque en components no se ve ni un solo icono

@@ -78,12 +78,10 @@ group :development do
   gem 'rb-fsevent',        :require => false
   # Development live reload end
   gem 'scss_lint', require: false
-  gem 'bullet'
   gem 'launchy'
 end
 
 group :test do
-  gem 'email_spec'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'capybara-screenshot'
@@ -93,6 +91,7 @@ group :test do
   gem 'fuubar'
   gem 'show_me_the_cookies'
   gem 'email_spec'
+  gem 'bullet'
 end
 
 group :production do

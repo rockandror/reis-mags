@@ -98,6 +98,9 @@ GEM
     bootstrap-toggle-rails (2.2.1.0)
     bootstrap_form (2.7.0)
     builder (3.2.3)
+    bullet (5.5.1)
+      activesupport (>= 3.0.0)
+      uniform_notifier (~> 1.10.0)
     byebug (9.0.6)
     capybara (2.14.0)
       addressable
@@ -136,6 +139,10 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
+    email_spec (2.1.0)
+      htmlentities (~> 4.3.3)
+      launchy (~> 2.1)
+      mail (~> 2.6.3)
     erubis (2.7.0)
     eventmachine (1.2.3)
     execjs (2.7.0)
@@ -377,6 +384,8 @@ GEM
     slop (3.6.0)
     spring (2.0.2)
       activesupport (>= 4.2)
+    spring-commands-rspec (1.0.4)
+      spring (>= 0.9.1)
     sprockets (3.7.1)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -394,6 +403,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
+    uniform_notifier (1.10.0)
     warden (1.2.7)
       rack (>= 1.0)
     web-console (2.3.0)
@@ -419,6 +429,7 @@ DEPENDENCIES
   bootstrap-timepicker-rails!
   bootstrap-toggle-rails
   bootstrap_form
+  bullet
   byebug
   capybara
   capybara-screenshot
@@ -427,6 +438,7 @@ DEPENDENCIES
   database_cleaner
   devise
   devise-i18n (~> 1.1.0)
+  email_spec
   enumerize!
   factory_girl_rails
   fastclick-rails
@@ -442,11 +454,12 @@ DEPENDENCIES
   jquery-minicolors-rails
   jquery-rails
   jquery-turbolinks
+  launchy
   letter_opener_web (~> 1.2.0)
   magnific-popup-rails (~> 1.1.0)
   nprogress-rails
   pg
-  poltergeist
+  poltergeist (~> 1.15.0)
   premailer-rails
   quiet_assets
   rack-livereload
@@ -466,6 +479,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   show_me_the_cookies
   spring
+  spring-commands-rspec
   turbolinks (~> 5)
   uglifier (>= 1.3.0)
   web-console (~> 2.0)

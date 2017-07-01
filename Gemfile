@@ -68,25 +68,30 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'spring-commands-rspec'
   gem 'letter_opener_web', '~> 1.2.0'
   gem 'quiet_assets'
+  # Development live reload
   gem 'guard', '>= 2.2.2', :require => false
   gem 'guard-livereload',  :require => false
   gem 'rack-livereload'
   gem 'rb-fsevent',        :require => false
+  # Development live reload end
   gem 'scss_lint', require: false
-
+  gem 'launchy'
 end
 
 group :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'capybara-screenshot'
+  gem 'poltergeist', '~> 1.15.0'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'fuubar'
-  gem 'poltergeist'
   gem 'show_me_the_cookies'
+  gem 'email_spec'
+  gem 'bullet'
 end
 
 group :production do

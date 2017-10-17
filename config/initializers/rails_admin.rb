@@ -9,7 +9,7 @@ RailsAdmin.config do |config|
     warden.authenticate! scope: :user
   end
 
-  config.included_models = ['User', 'Street', 'Gift']
+  config.included_models = ['User', 'Street', 'Gift', 'Edition']
 
   config.compact_show_view = false
 

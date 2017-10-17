@@ -1,4 +1,4 @@
-module StreetAdmin
+module EditionAdmin
 extend ActiveSupport::Concern
 
   included do
@@ -6,6 +6,14 @@ extend ActiveSupport::Concern
     rails_admin do
 
       navigation_icon 'fa fa-list'
+
+      list do
+        field :name
+      end
+
+      edit do
+        field :name
+      end
 
     end
 

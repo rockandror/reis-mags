@@ -9,7 +9,7 @@ RailsAdmin.config do |config|
     warden.authenticate! scope: :user
   end
 
-  config.included_models = ['User', 'Street', 'Gift', 'Edition']
+  config.included_models = ['Gift', 'Edition', 'User', 'Street']
 
   config.compact_show_view = false
 
@@ -20,13 +20,13 @@ RailsAdmin.config do |config|
     index                         # mandatory
     new
     export
-    history_index
-    bulk_delete
+    # history_index
+    # bulk_delete
     # member actions
     show
     edit
     delete
-    history_show
+    # history_show
     show_in_app
 
     # Add the nestable action for configured models

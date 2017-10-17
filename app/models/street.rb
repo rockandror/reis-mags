@@ -3,4 +3,5 @@ class Street < ActiveRecord::Base
 
   validates_presence_of :name, :position
 
+  has_many :gifts
 end

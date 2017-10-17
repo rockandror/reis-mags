@@ -9,8 +9,31 @@ RailsAdmin.config do |config|
     warden.authenticate! scope: :user
   end
 
-  config.included_models = ['User']
+  config.included_models = ['User', 'Street', 'Gift', 'Edition']
 
   config.compact_show_view = false
 
+  config.actions do
+    # root actions
+    dashboard                     # mandatory
+    # collection actions
+    index                         # mandatory
+    new
+    export
+    history_index
+    bulk_delete
+    # member actions
+    show
+    edit
+    delete
+    history_show
+    show_in_app
+
+    # Add the nestable action for configured models
+    nestable
+  end
+
+  config.model 'Street' do
+    nestable_list true
+  end
 end

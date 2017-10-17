@@ -1,13 +1,22 @@
 example_id                                  | status | run_time        |
 ------------------------------------------- | ------ | --------------- |
-./spec/features/admin_password_spec.rb[1:1] | passed | 0.04047 seconds |
-./spec/features/admin_password_spec.rb[1:2] | passed | 0.06888 seconds |
-./spec/features/admin_password_spec.rb[1:3] | passed | 0.60617 seconds |
-./spec/features/admin_password_spec.rb[1:4] | passed | 0.11501 seconds |
-./spec/features/admin_password_spec.rb[1:5] | passed | 0.09319 seconds |
-./spec/features/admin_session_spec.rb[1:1]  | passed | 1.06 seconds    |
-./spec/features/admin_session_spec.rb[1:2]  | passed | 0.11024 seconds |
-./spec/features/admin_session_spec.rb[1:3]  | passed | 0.3123 seconds  |
-./spec/model/user_spec.rb[1:1]              | passed | 0.01382 seconds |
-./spec/model/user_spec.rb[1:2]              | passed | 0.01397 seconds |
-./spec/model/user_spec.rb[1:3:1]            | passed | 0.01418 seconds |
+./spec/features/admin_password_spec.rb[1:1] | passed | 0.72344 seconds |
+./spec/features/admin_password_spec.rb[1:2] | passed | 0.06707 seconds |
+./spec/features/admin_password_spec.rb[1:3] | passed | 0.09522 seconds |
+./spec/features/admin_password_spec.rb[1:4] | passed | 0.6312 seconds  |
+./spec/features/admin_password_spec.rb[1:5] | passed | 0.09846 seconds |
+./spec/features/admin_session_spec.rb[1:1]  | passed | 0.11333 seconds |
+./spec/features/admin_session_spec.rb[1:2]  | passed | 0.32497 seconds |
+./spec/features/admin_session_spec.rb[1:3]  | passed | 0.17088 seconds |
+./spec/model/edition_spec.rb[1:1]           | passed | 0.01299 seconds |
+./spec/model/edition_spec.rb[1:2:1]         | passed | 0.0123 seconds  |
+./spec/model/gift_spec.rb[1:1]              | passed | 0.03073 seconds |
+./spec/model/gift_spec.rb[1:2:1]            | passed | 0.01649 seconds |
+./spec/model/gift_spec.rb[1:2:2]            | passed | 0.0164 seconds  |
+./spec/model/gift_spec.rb[1:2:3]            | passed | 0.01789 seconds |
+./spec/model/street_spec.rb[1:1]            | passed | 0.0714 seconds  |
+./spec/model/street_spec.rb[1:2:1]          | passed | 0.01854 seconds |
+./spec/model/street_spec.rb[1:2:2]          | passed | 0.10498 seconds |
+./spec/model/user_spec.rb[1:1]              | passed | 0.0149 seconds  |
+./spec/model/user_spec.rb[1:2]              | passed | 0.01376 seconds |
+./spec/model/user_spec.rb[1:3:1]            | passed | 0.01453 seconds |

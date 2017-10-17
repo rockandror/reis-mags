@@ -15,7 +15,7 @@ RSpec.describe Street, :type => :model do
       expect(street).not_to be_valid
     end
 
-    it "should not be valid without name" do
+    it "should not be valid without position" do
       street.position = nil
       expect(street).not_to be_valid
     end

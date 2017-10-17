@@ -16,5 +16,10 @@ FactoryGirl.define do
     sequence(:position)    { |n| n }
   end
 
+  factory :gift do
+    sequence(:name)             { |n| "name_street_#{n}" }
+    sequence(:street_number)    { |n| n }
+    street
+  end
 
 end

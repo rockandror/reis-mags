@@ -1,5 +1,5 @@
 class Edition < ActiveRecord::Base
-  include StreetAdmin
+  include EditionAdmin
 
   validates_presence_of :name
 

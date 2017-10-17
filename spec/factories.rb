@@ -11,4 +11,10 @@ FactoryGirl.define do
     factory :admin, traits: [:admin_user]
   end
 
+  factory :street do
+    sequence(:name)        { |n| "name_street_#{n}" }
+    sequence(:position)    { |n| n }
+  end
+
+
 end

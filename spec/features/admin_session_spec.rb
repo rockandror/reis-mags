@@ -32,7 +32,7 @@ feature "Admin sesions", :type => :feature do
     fill_in 'Contrasenya', with: "qwer1234"
     click_button 'Iniciar sessió'
 
-    click_on 'Eixir'
+    click_on 'Desconectar'
   end
 
 end

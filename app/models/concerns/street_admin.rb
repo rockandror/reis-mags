@@ -7,6 +7,16 @@ extend ActiveSupport::Concern
 
       navigation_icon 'fa fa-road'
 
+      list do
+        field :name
+        field :position
+      end
+
+      edit do
+        field :name
+        field :position
+      end
+      
     end
 
   end

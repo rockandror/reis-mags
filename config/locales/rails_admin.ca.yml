@@ -1,12 +1,12 @@
 ca:
-  home:
-    name: Inici
   views:
     pagination:
       previous: "&laquo; Anterior"
       next: "Següent &raquo;"
       truncate: "…"
   admin:
+    home:
+      name: Inici
     misc:
       search: "Cerca"
       filter: "Filtra"
@@ -22,7 +22,7 @@ ca:
       up: "Amunt"
       down: "Avall"
       navigation: "Navegació"
-      log_out: "Eixir"
+      log_out: "Desconectar"
       ago: "enrere"
     flash:
       successful: "%{name} %{action} amb èxit"
@@ -92,6 +92,8 @@ ca:
         title: "Història de %{model_label} '%{object_label}'"
         menu: "Història"
         breadcrumb: "Història"
+      nestable:
+        menu: "Ordenar carrers"
     form:
       cancel: "Canceŀla"
       basic_info: "Informació bàsica"
@@ -100,9 +102,9 @@ ca:
       one_char: "caràcter"
       char_length_up_to: "longitud fins a"
       char_length_of: "longitud de"
-      save: "Alça"
-      save_and_add_another: "Alça i afegeix-ne un altre"
-      save_and_edit: "Alça i edita"
+      save: "Guardar"
+      save_and_add_another: "Guardar i afegeix-ne un altre"
+      save_and_edit: "Guardar i edita"
       all_of_the_following_related_items_will_be_deleted: "? Els següents elements relacionats poden ser esborrats o quedar òrfens:"
       are_you_sure_you_want_to_delete_the_object: "Segur que voleu eliminar este/a %{model_name}"
       confirmation: "Sí, fes"
@@ -127,3 +129,19 @@ ca:
         default_col_sep: ","
         col_sep: "Separador de columnes"
         col_sep_help: "Deixeu en blanc per al valor per defecte ('%{value}')" # value is default_col_sep
+  activerecord:
+    models:
+      edition: "Edicions"
+      gift: "Inscripcions de Regals"
+      street: "Carrers"
+      user: "Usuaris Administradors"
+    attributes:
+      edition:
+        name: "Nom de l'Edició"
+      gift:
+        name: "Nom de la persona"
+        street: "Nom del Carrer"
+        street_number: "Número de portal"
+      street:
+        name: "Nom del carrer"
+        position: "Posició"

@@ -1,0 +1,6 @@
+ca:
+  menu:
+    home: Inici
+    login: Iniciar sessió
+    logout: Sortir
+    admin: Administrar

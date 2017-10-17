@@ -8,31 +8,31 @@ feature "Admin sesions", :type => :feature do
   scenario 'Normal users cannot be logged into backend' do
     visit rails_admin_path
 
-    fill_in 'Correo electrónico', with: user.email
-    fill_in 'Contraseña', with: user.password
-    click_button 'Iniciar sesión'
+    fill_in 'Adreça electrònica', with: user.email
+    fill_in 'Contrasenya', with: user.password
+    click_button 'Iniciar sessió'
 
-    expect(page).to have_content "Tienes que iniciar sesión o registrarte para poder continuar."
+    expect(page).to have_content " Has d'iniciar sessió o bé registrar-te abans de continuar."
   end
 
   scenario 'Only admin users can login into backend' do
     visit rails_admin_path
 
-    fill_in 'Correo electrónico', with: user_admin.email
-    fill_in 'Contraseña', with: "qwer1234"
-    click_button 'Iniciar sesión'
+    fill_in 'Adreça electrònica', with: user_admin.email
+    fill_in 'Contrasenya', with: "qwer1234"
+    click_button 'Iniciar sessió'
 
-    expect(page).to have_content "Sesión iniciada."
+    expect(page).to have_content "Sessió iniciada correctament."
   end
 
   scenario 'Admin user can logout from backend' do
     visit rails_admin_path
 
-    fill_in 'Correo electrónico', with: user_admin.email
-    fill_in 'Contraseña', with: "qwer1234"
-    click_button 'Iniciar sesión'
+    fill_in 'Adreça electrònica', with: user_admin.email
+    fill_in 'Contrasenya', with: "qwer1234"
+    click_button 'Iniciar sessió'
 
-    click_on 'Desconectar'
+    click_on 'Eixir'
   end
 
 end

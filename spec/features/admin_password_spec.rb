@@ -7,16 +7,16 @@ feature "Admin passwords", :type => :feature do
   scenario 'Admin users can forget his passwords' do
     visit new_user_session_path
 
-    expect(page).to have_link "¿Ha olvidado su contraseña?"
+    expect(page).to have_link "Has oblidat la teva contrasenya?"
   end
 
   scenario "should show error when email not found" do
     visit new_user_password_path
 
     fill_in "user_email", with: "unexistent@email.com"
-    click_on "Envíeme las instrucciones para resetear mi contraseña"
+    click_on "Enviar les instruccions per a regenerar la meva contrasenya"
 
-    expect(page).to have_content "no se ha encontrado"
+    expect(page).to have_content "no s'ha trobat"
   end
 
   scenario 'Admin users can request passwords reset' do
@@ -24,9 +24,9 @@ feature "Admin passwords", :type => :feature do
     visit new_user_password_path
 
     fill_in "user_email", with: user.email
-    click_on "Envíeme las instrucciones para resetear mi contraseña"
+    click_on "Enviar les instruccions per a regenerar la meva contrasenya"
 
-    expect(page).to have_content "Recibirás un correo con instrucciones sobre cómo resetear tu contraseña en unos pocos minutos."
+    expect(page).to have_content "En breu rebràs un correu electrònic amb instruccions sobre com restablir la teva contrasenya."
     expect(ActionMailer::Base.deliveries.count).to eq(1)
   end
 
@@ -35,7 +35,7 @@ feature "Admin passwords", :type => :feature do
     visit new_user_password_path
 
     fill_in "user_email", with: user.email
-    click_on "Envíeme las instrucciones para resetear mi contraseña"
+    click_on "Enviar les instruccions per a regenerar la meva contrasenya"
 
     expect(ActionMailer::Base.deliveries.count).to eq(1)
   end
@@ -44,7 +44,7 @@ feature "Admin passwords", :type => :feature do
     visit new_user_password_path
 
     fill_in "user_email", with: user.email
-    click_on "Envíeme las instrucciones para resetear mi contraseña"
+    click_on "Enviar les instruccions per a regenerar la meva contrasenya"
 
 
   end

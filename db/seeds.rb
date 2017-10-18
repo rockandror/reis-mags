@@ -91,3 +91,17 @@ Street.create!([
   { name: "PALOU, CAN", position: 660 },
   { name: "SON ANTELM", position: 670 }
 ])
+
+Edition.create!([
+  { name: "Reis Mags Alaró 2017" }
+])
+
+Gift.create!([
+ { name: "Joan", street_number: "1", street_id: 1 },
+ { name: "Feliu", street_number: "2", street_id: 1 },
+ { name: "Bartomeu", street_number: "3", street_id: 1 },
+
+ { name: "Tofol", street_number: "1", street_id: 2 },
+ { name: "Andreu", street_number: "2", street_id: 2 },
+ { name: "Ana", street_number: "3", street_id: 2 }, 
+])

@@ -10,7 +10,9 @@ extend ActiveSupport::Concern
       list do
         field :name
         field :street
+        field :street_position
         field :street_number
+        field :delivery_order
       end
 
       edit do

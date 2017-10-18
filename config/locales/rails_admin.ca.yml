@@ -142,6 +142,7 @@ ca:
         name: "Nom de la persona"
         street: "Nom del Carrer"
         street_number: "Número de portal"
+        street_position: "Ordre del carrer"
       street:
         name: "Nom del carrer"
         position: "Posició"

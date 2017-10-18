@@ -7,8 +7,8 @@ class Gift < ActiveRecord::Base
 
   before_save :update_street_position
 
-  default_scope {
-    select('gifts.*, (gifts.street_position + gifts.street_number) AS delivery_order').order("delivery_order ASC")
+  scope :inscripcions, -> {
+    all.order("street_number ASC")
   }
 
   private

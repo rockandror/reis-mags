@@ -36,4 +36,5 @@ RailsAdmin.config do |config|
   config.model 'Street' do
     nestable_list true
   end
+
 end

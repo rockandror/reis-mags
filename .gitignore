@@ -31,3 +31,6 @@ dump.rdb
 
 # Ignore local directory for file uploads
 public/uploads
+
+# Ignore spec
+spec/examples.txt

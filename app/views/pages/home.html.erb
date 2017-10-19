@@ -1,3 +1,5 @@
+<% content_for :body_class, "home-page" %>
+
 <div id="home-page" class="page">
   <div class="container">
     <div class="starter-template">
@@ -18,7 +20,7 @@
               </li>
             <% else %>
               <li class="text-center">
-                <%= link_to t("menu.admin"), rails_admin_path, class: 'btn btn-lg btn-primary', data: { turbolinks: false } %>
+                <%= link_to t("menu.admin"), rails_admin_path, class: 'btn btn-lg btn-block btn-primary', data: { turbolinks: false } %>
               </li>
             <% end %>
           </ul>

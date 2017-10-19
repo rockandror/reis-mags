@@ -1,8 +1,31 @@
 <div id="home-page" class="page">
   <div class="container">
     <div class="starter-template">
-      <h1><%= t "home.title" %></h1>
-      <p class="lead"><%= t "home.description" %></p>
+      <div class="col-xs-12 col-md-6 left text-center">
+        <div class="center-vertically">
+          <%= image_tag 'reis-mags.svg', class: 'img-responsive', alt: 'Festa del Reis Mags' %>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-6 right text-center">
+        <div class="center-vertically">
+          <h1><%= t "home.title" %></h1>
+          <p class="lead"><%= t "home.description" %></p>
+          <ul class="list-unstyled">
+            <% unless current_user %>
+              <li class="text-center">
+                <%= link_to t("menu.login"), new_user_session_path, class: 'btn btn-lg btn-primary' %>
+              </li>
+            <% else %>
+              <li class="text-center">
+                <%= link_to t("menu.admin"), rails_admin_path, class: 'btn btn-lg btn-primary', data: { turbolinks: false } %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+
+      </div>
     </div>
+
   </div>
 </div>

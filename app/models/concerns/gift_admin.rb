@@ -19,7 +19,6 @@ extend ActiveSupport::Concern
         field :street_number do
           sortable false
         end
-        field :street_position
         field :edition
       end
 

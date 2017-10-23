@@ -94,6 +94,7 @@ ca:
         breadcrumb: "Història"
       nestable:
         menu: "Ordenar carrers"
+        success: "Actualitzat correctament"
     form:
       cancel: "Canceŀla"
       basic_info: "Informació bàsica"
@@ -143,6 +144,7 @@ ca:
         street: "Nom del Carrer"
         street_number: "Número de portal"
         street_position: "Ordre del carrer"
+        edition: "Edició"
       street:
         name: "Nom del carrer"
         position: "Posició"

@@ -19,13 +19,14 @@ extend ActiveSupport::Concern
         field :street_number do
           sortable false
         end
-        field :street_position
+        field :edition
       end
 
       edit do
         field :name
         field :street
         field :street_number
+        field :edition
       end
 
     end

@@ -10,14 +10,14 @@
   <%= render 'shared/favicon' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="<%= yield :body_class%>">
   <% if @lock_landscape %>
     <%= render 'shared/block_landscape' %>
   <% end %>
   <div class="overlay-nprogress"></div>
 
   <div class="page-wrap">
-    <%= render '/shared/nav' %>
+    <%#= render '/shared/nav' %>
     <%= render '/shared/notice' %>
     <%= yield %>
     <%= render '/shared/scroll_top' %>

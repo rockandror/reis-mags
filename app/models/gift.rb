@@ -8,7 +8,7 @@ class Gift < ActiveRecord::Base
   before_save :update_street_position
 
   scope :inscripcions, -> {
-    all.order("street_number ASC")
+    where(edition_id: Edition.last).order("street_number ASC")
   }
 
   private

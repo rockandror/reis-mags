@@ -97,11 +97,11 @@ Edition.create!([
 ])
 
 Gift.create!([
- { name: "Joan", street_number: "1", street_id: Street.first.id, edition_id: Edition.first.id },
- { name: "Feliu", street_number: "2", street_id: Street.first.id, edition_id: Edition.first.id },
- { name: "Bartomeu", street_number: "3", street_id: Street.first.id, edition_id: Edition.first.id },
+ { name: "Joan", street_number: "1", street_id: Street.first.id, edition_id: Edition.first.id, gift_count: 1 },
+ { name: "Feliu", street_number: "2", street_id: Street.first.id, edition_id: Edition.first.id, gift_count: 1 },
+ { name: "Bartomeu", street_number: "3", street_id: Street.first.id, edition_id: Edition.first.id, gift_count: 1 },
 
- { name: "Tofol", street_number: "1", street_id: Street.second.id, edition_id: Edition.first.id },
- { name: "Andreu", street_number: "2", street_id: Street.second.id, edition_id: Edition.first.id },
- { name: "Ana", street_number: "3", street_id: Street.second.id, edition_id: Edition.first.id }, 
+ { name: "Tofol", street_number: "1", street_id: Street.second.id, edition_id: Edition.first.id, gift_count: 1 },
+ { name: "Andreu", street_number: "2", street_id: Street.second.id, edition_id: Edition.first.id, gift_count: 1 },
+ { name: "Ana", street_number: "3", street_id: Street.second.id, edition_id: Edition.first.id, gift_count: 1 },
 ])

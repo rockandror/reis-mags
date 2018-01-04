@@ -29,6 +29,7 @@ extend ActiveSupport::Concern
         field :name
         field :street
         field :street_number
+        field :gift_count
         field :edition
       end
 

@@ -103,5 +103,5 @@ Gift.create!([
 
  { name: "Tofol", street_number: "1", street_id: Street.second.id, edition_id: Edition.first.id },
  { name: "Andreu", street_number: "2", street_id: Street.second.id, edition_id: Edition.first.id },
- { name: "Ana", street_number: "3", street_id: Street.second.id, edition_id: Edition.first.id }, 
+ { name: "Ana", street_number: "3", street_id: Street.second.id, edition_id: Edition.first.id },
 ])

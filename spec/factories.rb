@@ -19,6 +19,7 @@ FactoryGirl.define do
   factory :gift do
     sequence(:name)             { |n| "name_owner_gift_#{n}" }
     sequence(:street_number)    { |n| n }
+    gift_count 1
     street
     edition
   end

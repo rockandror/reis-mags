@@ -145,6 +145,7 @@ ca:
         street_number: "Número de portal"
         street_position: "Ordre del carrer"
         edition: "Edició"
+        gift_count: "Número de regals"
       street:
         name: "Nom del carrer"
         position: "Posició"
